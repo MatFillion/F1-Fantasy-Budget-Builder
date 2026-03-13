@@ -1,0 +1,14 @@
+{
+  "abbreviation": "HAA",
+  "displayName": "Haas",
+  "value": "11.0M",
+  "seasonTotalPoints": 20,
+  "percentagePicked": 7,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 20
+    }
+  ]
+}

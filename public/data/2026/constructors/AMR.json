@@ -1,0 +1,84 @@
+{
+  "abbreviation": "AMR",
+  "displayName": "Aston Martin",
+  "value": "11.1M",
+  "seasonTotalPoints": 284,
+  "percentagePicked": 16,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 1
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 4
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 9
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 18
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": 11
+    },
+    {
+      "round": "6",
+      "raceName": "Miami",
+      "totalPoints": 0
+    },
+    {
+      "round": "7",
+      "raceName": "Emilia Romagna",
+      "totalPoints": 0
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": -4
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 1
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 31
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 24
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 33
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": 20
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": 45
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": 41
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "abbreviation": "MER",
+  "displayName": "Mercedes",
+  "value": "27.8M",
+  "seasonTotalPoints": 1016,
+  "percentagePicked": 19,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 67
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 69
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 56
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 60
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": 46
+    },
+    {
+      "round": "6",
+      "raceName": "Miami",
+      "totalPoints": 0
+    },
+    {
+      "round": "7",
+      "raceName": "Emilia Romagna",
+      "totalPoints": 0
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": 9
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 24
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 87
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 19
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 7
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": 50
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": 54
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": 30
+    }
+  ]
+}

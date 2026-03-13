@@ -1,0 +1,84 @@
+{
+  "abbreviation": "ALP",
+  "displayName": "Alpine",
+  "value": "9.7M",
+  "seasonTotalPoints": 144,
+  "percentagePicked": 11,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": -14
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": -6
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 9
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 22
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": -6
+    },
+    {
+      "round": "6",
+      "raceName": "Miami",
+      "totalPoints": 0
+    },
+    {
+      "round": "7",
+      "raceName": "Emilia Romagna",
+      "totalPoints": 0
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": -11
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 31
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 11
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 17
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 5
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": -13
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": 2
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": 14
+    }
+  ]
+}

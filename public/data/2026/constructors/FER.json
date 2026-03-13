@@ -1,0 +1,84 @@
+{
+  "abbreviation": "FER",
+  "displayName": "Ferrari",
+  "value": "31.8M",
+  "seasonTotalPoints": 992,
+  "percentagePicked": 19,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 36
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": -23
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 56
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 73
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": 64
+    },
+    {
+      "round": "6",
+      "raceName": "Miami",
+      "totalPoints": 0
+    },
+    {
+      "round": "7",
+      "raceName": "Emilia Romagna",
+      "totalPoints": 0
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": 71
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 61
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 57
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 67
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 41
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": 70
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": 39
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": -4
+    }
+  ]
+}

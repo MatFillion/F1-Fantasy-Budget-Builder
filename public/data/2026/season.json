@@ -1,0 +1,68 @@
+{
+  "season": 2026,
+  "latestRound": "15",
+  "totalDrivers": 21,
+  "totalConstructors": 10,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia"
+    },
+    {
+      "round": "2",
+      "raceName": "China"
+    },
+    {
+      "round": "3",
+      "raceName": "Japan"
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain"
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia"
+    },
+    {
+      "round": "6",
+      "raceName": "Miami"
+    },
+    {
+      "round": "7",
+      "raceName": "Emilia Romagna"
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco"
+    },
+    {
+      "round": "9",
+      "raceName": "Spain"
+    },
+    {
+      "round": "10",
+      "raceName": "Canada"
+    },
+    {
+      "round": "11",
+      "raceName": "Austria"
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom"
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium"
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary"
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands"
+    }
+  ]
+}
