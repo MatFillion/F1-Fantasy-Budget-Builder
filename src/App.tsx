@@ -6,13 +6,13 @@ import PricesTable from './components/PricesTable';
 import type { TabId } from './types';
 
 const tabs: { id: TabId; label: string }[] = [
+  { id: 'prices', label: 'Prices' },
   { id: 'drivers', label: 'Drivers' },
   { id: 'constructors', label: 'Constructors' },
-  { id: 'prices', label: 'Prices' },
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<TabId>('drivers');
+  const [activeTab, setActiveTab] = useState<TabId>('prices');
   const { season, drivers, constructors, loading, error } = useSeasonData();
 
   return (
