@@ -2,21 +2,21 @@
   "abbreviation": "VER",
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
-  "position": 2,
-  "value": "29.5M",
-  "seasonTotalPoints": 29,
-  "percentagePicked": 20,
+  "position": 1,
+  "value": "27.7M",
+  "seasonTotalPoints": 50,
+  "percentagePicked": 24,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 29,
+      "totalPoints": 50,
       "race": {
-        "position": 18,
+        "position": 8,
         "qualifyingPosition": 0,
-        "overtakeBonus": 2,
-        "fastestLap": 0,
-        "dotd": 0
+        "overtakeBonus": 13,
+        "fastestLap": 10,
+        "dotd": 10
       },
       "sprint": {
         "position": 0,

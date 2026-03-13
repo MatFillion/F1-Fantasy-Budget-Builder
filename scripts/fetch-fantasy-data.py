@@ -1,416 +1,388 @@
 #!/usr/bin/env python3
 """
-Fetch F1 Fantasy data and write JSON files for the React app.
+Fetch F1 Fantasy data directly from the official fantasy.formula1.com feeds API
+and write JSON files for the React app.
 
 Usage:
     python scripts/fetch-fantasy-data.py            # fetch and write files
-    python scripts/fetch-fantasy-data.py --dry-run   # print data without writing
+    python scripts/fetch-fantasy-data.py --dry-run   # print what would be written
 """
 
 import argparse
 import json
 import os
 import sys
-from datetime import datetime
+import time
 
-from formula_fantasy import (
-    get_driver_points,
-    get_driver_season_points,
-    get_driver_breakdown,
-    get_driver_info,
-    get_constructor_points,
-    get_constructor_season_points,
-    get_constructor_info,
-    list_drivers,
-    list_constructors,
-    get_latest_round,
-)
+import requests
 
-SEASON = datetime.now().year
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
 
-# Proper display names — the API returns slugs like "maxverstappen"
-DRIVER_DISPLAY_NAMES = {
-    "ALB": "Alex Albon",
-    "ALO": "Fernando Alonso",
-    "ANT": "Kimi Antonelli",
-    "BEA": "Oliver Bearman",
-    "BOR": "Gabriel Bortoleto",
-    "COL": "Franco Colapinto",
-    "DOO": "Jack Doohan",
-    "GAS": "Pierre Gasly",
-    "HAD": "Isack Hadjar",
-    "HAM": "Lewis Hamilton",
-    "HUL": "Nico Hulkenberg",
-    "LAW": "Liam Lawson",
-    "LEC": "Charles Leclerc",
-    "NOR": "Lando Norris",
-    "OCO": "Esteban Ocon",
-    "PIA": "Oscar Piastri",
-    "RUS": "George Russell",
-    "SAI": "Carlos Sainz",
-    "STR": "Lance Stroll",
-    "TSU": "Yuki Tsunoda",
-    "VER": "Max Verstappen",
+SEASON = 2026
+
+BASE_URL = "https://fantasy.formula1.com/feeds"
+SCHEDULE_URL = f"{BASE_URL}/schedule/raceday_en.json"
+DRIVERS_URL_TEMPLATE = f"{BASE_URL}/drivers/{{gameday_id}}_en.json"
+
+# Map API full names → app abbreviations
+DRIVER_ABBR = {
+    "Max Verstappen": "VER",
+    "Isack Hadjar": "HAD",
+    "George Russell": "RUS",
+    "Kimi Antonelli": "ANT",
+    "Charles Leclerc": "LEC",
+    "Lewis Hamilton": "HAM",
+    "Lando Norris": "NOR",
+    "Oscar Piastri": "PIA",
+    "Fernando Alonso": "ALO",
+    "Lance Stroll": "STR",
+    "Pierre Gasly": "GAS",
+    "Franco Colapinto": "COL",
+    "Alexander Albon": "ALB",
+    "Alex Albon": "ALB",
+    "Carlos Sainz": "SAI",
+    "Esteban Ocon": "OCO",
+    "Oliver Bearman": "BEA",
+    "Nico Hulkenberg": "HUL",
+    "Gabriel Bortoleto": "BOR",
+    "Sergio Perez": "PER",
+    "Valtteri Bottas": "BOT",
+    "Liam Lawson": "LAW",
+    "Arvid Lindblad": "LIN",
 }
 
-CONSTRUCTOR_DISPLAY_NAMES = {
-    "ALP": "Alpine",
-    "AMR": "Aston Martin",
-    "FER": "Ferrari",
-    "HAS": "Haas",
-    "MCL": "McLaren",
-    "MER": "Mercedes",
-    "RB": "Racing Bulls",
-    "RBR": "Red Bull Racing",
-    "SAU": "Sauber",
-    "WIL": "Williams",
+CONSTRUCTOR_ABBR = {
+    "Red Bull Racing": "RBR",
+    "Mercedes": "MER",
+    "Ferrari": "FER",
+    "McLaren": "MCL",
+    "Aston Martin": "AMR",
+    "Alpine": "ALP",
+    "Williams": "WIL",
+    "Haas F1 Team": "HAS",
+    "Haas": "HAS",
+    "Audi": "AUD",
+    "Cadillac": "CAD",
+    "Racing Bulls": "RCB",
 }
 
-# Fallback race names when the API doesn't include them
-RACE_NAMES = {
-    "1": "Australia",
-    "2": "China",
-    "3": "Japan",
-    "4": "Bahrain",
-    "5": "Saudi Arabia",
-    "6": "Miami",
-    "7": "Emilia Romagna",
-    "8": "Monaco",
-    "9": "Spain",
-    "10": "Canada",
-    "11": "Austria",
-    "12": "Great Britain",
-    "13": "Belgium",
-    "14": "Hungary",
-    "15": "Netherlands",
-    "16": "Italy",
-    "17": "Azerbaijan",
-    "18": "Singapore",
-    "19": "United States",
-    "20": "Mexico",
-    "21": "Brazil",
-    "22": "Las Vegas",
-    "23": "Qatar",
-    "24": "Abu Dhabi",
+# Reverse lookups: abbreviation → preferred display name
+DRIVER_DISPLAY = {v: k for k, v in DRIVER_ABBR.items()}
+DRIVER_DISPLAY["ALB"] = "Alex Albon"  # normalise
+
+CONSTRUCTOR_DISPLAY = {v: k for k, v in CONSTRUCTOR_ABBR.items()}
+CONSTRUCTOR_DISPLAY["HAS"] = "Haas"
+
+# API constructor TLAs differ from what the app uses
+CONSTRUCTOR_TLA_MAP = {
+    "AST": "AMR",
+    "HAA": "HAS",
+    "RBS": "RCB",
 }
 
 
-def race_name_for(round_num, api_race=None):
-    """Return a race name from the API object or the fallback dict."""
-    if api_race and api_race.get("raceName"):
-        return api_race["raceName"]
-    return RACE_NAMES.get(str(round_num), f"Round {round_num}")
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
+def fetch_json(url: str) -> dict:
+    """GET a URL and return parsed JSON, or raise on failure."""
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
 
 
-def safe_int(value, default=0):
+def safe_float(value, default=0.0):
     try:
-        return int(value)
+        return float(value)
     except (TypeError, ValueError):
         return default
 
 
-def extract_race_breakdown(breakdown, session_type):
-    """Normalise a breakdown dict into the expected output shape."""
-    if not breakdown or not isinstance(breakdown, dict):
-        if session_type == "race":
-            return {"position": 0, "qualifyingPosition": 0, "overtakeBonus": 0, "fastestLap": 0, "dotd": 0}
-        return {"position": 0, "qualifyingPosition": 0, "fastestLap": 0, "overtakeBonus": 0}
-
-    if session_type == "race":
-        return {
-            "position": safe_int(breakdown.get("position")),
-            "qualifyingPosition": safe_int(breakdown.get("qualifyingPosition")),
-            "overtakeBonus": safe_int(breakdown.get("overtakeBonus")),
-            "fastestLap": safe_int(breakdown.get("fastestLap")),
-            # API uses "dotf"; expose as "dotd" (driver of the day)
-            "dotd": safe_int(breakdown.get("dotf", breakdown.get("dotd"))),
-        }
-    # sprint
-    return {
-        "position": safe_int(breakdown.get("position")),
-        "qualifyingPosition": safe_int(breakdown.get("qualifyingPosition")),
-        "fastestLap": safe_int(breakdown.get("fastestLap")),
-        "overtakeBonus": safe_int(breakdown.get("overtakeBonus")),
-    }
-
-
-# ---------------------------------------------------------------------------
-# Driver fetching
-# ---------------------------------------------------------------------------
-
-def fetch_driver_via_info(abbr, latest_round):
-    """Primary path: use get_driver_info() which returns everything at once."""
-    info = get_driver_info(abbr)
-
-    races = []
-    api_races = info.get("races", [])
-
-    # Build a lookup by round so we can iterate in order
-    races_by_round = {str(r.get("round")): r for r in api_races}
-
-    for rnd in range(1, int(latest_round) + 1):
-        rnd_str = str(rnd)
-        api_race = races_by_round.get(rnd_str, {})
-        races.append({
-            "round": rnd_str,
-            "raceName": race_name_for(rnd, api_race),
-            "totalPoints": safe_int(api_race.get("totalPoints")),
-            "race": extract_race_breakdown(api_race.get("race"), "race"),
-            "sprint": extract_race_breakdown(api_race.get("sprint"), "sprint"),
-        })
-
-    display_name = DRIVER_DISPLAY_NAMES.get(abbr, info.get("displayName", abbr))
-
-    return {
-        "abbreviation": info.get("abbreviation", abbr),
-        "displayName": display_name,
-        "team": info.get("team", "Unknown"),
-        "position": safe_int(info.get("position")),
-        "value": info.get("value", "0M"),
-        "seasonTotalPoints": safe_int(info.get("seasonTotalPoints")),
-        "percentagePicked": safe_int(info.get("percentagePicked")),
-        "races": races,
-    }
-
-
-def fetch_driver_individually(abbr, latest_round):
-    """Fallback path: call individual API functions per round."""
-    info = get_driver_info(abbr)
-    season_pts = get_driver_season_points(abbr)
-
-    races = []
-    for rnd in range(1, int(latest_round) + 1):
-        rnd_str = str(rnd)
-        try:
-            total = get_driver_points(abbr, rnd_str)
-        except Exception:
-            total = 0
-        try:
-            race_bd = get_driver_breakdown(abbr, rnd_str, "race")
-        except Exception:
-            race_bd = {}
-        try:
-            sprint_bd = get_driver_breakdown(abbr, rnd_str, "sprint")
-        except Exception:
-            sprint_bd = {}
-
-        races.append({
-            "round": rnd_str,
-            "raceName": race_name_for(rnd),
-            "totalPoints": safe_int(total),
-            "race": extract_race_breakdown(race_bd, "race"),
-            "sprint": extract_race_breakdown(sprint_bd, "sprint"),
-        })
-
-    display_name = DRIVER_DISPLAY_NAMES.get(abbr, info.get("displayName", abbr))
-
-    return {
-        "abbreviation": info.get("abbreviation", abbr),
-        "displayName": display_name,
-        "team": info.get("team", "Unknown"),
-        "position": safe_int(info.get("position")),
-        "value": info.get("value", "0M"),
-        "seasonTotalPoints": safe_int(season_pts),
-        "percentagePicked": safe_int(info.get("percentagePicked")),
-        "races": races,
-    }
-
-
-def fetch_driver(abbr, latest_round):
-    """Try the efficient info-based path first, fall back to per-round calls."""
+def safe_int(value, default=0):
     try:
-        return fetch_driver_via_info(abbr, latest_round)
-    except Exception as exc:
-        print(f"  ⚠  get_driver_info failed for {abbr} ({exc}), trying individual calls…")
-        try:
-            return fetch_driver_individually(abbr, latest_round)
-        except Exception as exc2:
-            print(f"  ✗  Failed to fetch driver {abbr}: {exc2}")
-            return None
+        return int(float(value))
+    except (TypeError, ValueError):
+        return default
 
 
-# ---------------------------------------------------------------------------
-# Constructor fetching
-# ---------------------------------------------------------------------------
+def driver_abbr(full_name: str, api_tla: str = "") -> str:
+    """Resolve a driver abbreviation from their full name or API TLA."""
+    if full_name in DRIVER_ABBR:
+        return DRIVER_ABBR[full_name]
+    # Fuzzy: check if any known name is contained in the API name
+    for known, abbr in DRIVER_ABBR.items():
+        if known.lower() in full_name.lower() or full_name.lower() in known.lower():
+            return abbr
+    # Fall back to the API TLA if it looks valid
+    if api_tla and len(api_tla) == 3:
+        return api_tla.upper()
+    # Last resort: first 3 letters of last name
+    parts = full_name.strip().split()
+    return (parts[-1][:3]).upper() if parts else "UNK"
 
-def fetch_constructor_via_info(abbr, latest_round):
-    """Primary path: use get_constructor_info()."""
-    info = get_constructor_info(abbr)
 
-    races = []
-    api_races = info.get("races", [])
-    races_by_round = {str(r.get("round")): r for r in api_races}
+def constructor_abbr(full_name: str, api_tla: str = "") -> str:
+    """Resolve a constructor abbreviation."""
+    if full_name in CONSTRUCTOR_ABBR:
+        return CONSTRUCTOR_ABBR[full_name]
+    for known, abbr in CONSTRUCTOR_ABBR.items():
+        if known.lower() in full_name.lower() or full_name.lower() in known.lower():
+            return abbr
+    mapped = CONSTRUCTOR_TLA_MAP.get(api_tla, api_tla)
+    if mapped and len(mapped) >= 2:
+        return mapped.upper()[:3]
+    parts = full_name.strip().split()
+    return (parts[0][:3]).upper() if parts else "UNK"
 
-    for rnd in range(1, int(latest_round) + 1):
-        rnd_str = str(rnd)
-        api_race = races_by_round.get(rnd_str, {})
-        races.append({
-            "round": rnd_str,
-            "raceName": race_name_for(rnd, api_race),
-            "totalPoints": safe_int(api_race.get("totalPoints")),
-        })
 
-    display_name = CONSTRUCTOR_DISPLAY_NAMES.get(abbr, info.get("displayName", abbr))
-
+def extract_driver_race(player: dict) -> dict:
+    """Build the race breakdown sub-object from AdditionalStats."""
+    stats = player.get("AdditionalStats") or {}
     return {
-        "abbreviation": info.get("abbreviation", abbr),
-        "displayName": display_name,
-        "value": info.get("value", "0M"),
-        "seasonTotalPoints": safe_int(info.get("seasonTotalPoints")),
-        "percentagePicked": safe_int(info.get("percentagePicked")),
-        "races": races,
+        "position": safe_int(stats.get("top10_race_position_pts")),
+        "qualifyingPosition": safe_int(stats.get("q3_finishes_pts")),
+        "overtakeBonus": safe_int(stats.get("overtaking_pts")),
+        "fastestLap": safe_int(stats.get("fastest_lap_pts")),
+        "dotd": safe_int(stats.get("dotd_pts")),
     }
 
 
-def fetch_constructor_individually(abbr, latest_round):
-    """Fallback: per-round calls."""
-    info = get_constructor_info(abbr)
-    season_pts = get_constructor_season_points(abbr)
-
-    races = []
-    for rnd in range(1, int(latest_round) + 1):
-        rnd_str = str(rnd)
-        try:
-            total = get_constructor_points(abbr, rnd_str)
-        except Exception:
-            total = 0
-        races.append({
-            "round": rnd_str,
-            "raceName": race_name_for(rnd),
-            "totalPoints": safe_int(total),
-        })
-
-    display_name = CONSTRUCTOR_DISPLAY_NAMES.get(abbr, info.get("displayName", abbr))
-
+def extract_driver_sprint(player: dict) -> dict:
+    """Build the sprint breakdown sub-object."""
+    stats = player.get("AdditionalStats") or {}
+    sprint_pts = safe_int(player.get("SprintPoints"))
     return {
-        "abbreviation": info.get("abbreviation", abbr),
-        "displayName": display_name,
-        "value": info.get("value", "0M"),
-        "seasonTotalPoints": safe_int(season_pts),
-        "percentagePicked": safe_int(info.get("percentagePicked")),
-        "races": races,
+        "position": safe_int(stats.get("top8_sprint_position_pts")),
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+    } if sprint_pts else {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
     }
 
 
-def fetch_constructor(abbr, latest_round):
-    try:
-        return fetch_constructor_via_info(abbr, latest_round)
-    except Exception as exc:
-        print(f"  ⚠  get_constructor_info failed for {abbr} ({exc}), trying individual calls…")
-        try:
-            return fetch_constructor_individually(abbr, latest_round)
-        except Exception as exc2:
-            print(f"  ✗  Failed to fetch constructor {abbr}: {exc2}")
-            return None
-
-
-# ---------------------------------------------------------------------------
-# File writing helpers
-# ---------------------------------------------------------------------------
-
-def write_json(path, data, dry_run=False):
+def write_json(path: str, data: dict, dry_run: bool = False):
     if dry_run:
-        print(json.dumps(data, indent=2))
+        print(f"    [dry-run] Would write {path}")
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
-
-
-def build_season_json(all_drivers, all_constructors, latest_round):
-    """Build the season.json with the race calendar and metadata."""
-    race_list = []
-    # Derive race names from the first driver that has data
-    sample = next((d for d in all_drivers if d and d.get("races")), None)
-    for rnd in range(1, int(latest_round) + 1):
-        rnd_str = str(rnd)
-        name = RACE_NAMES.get(rnd_str, f"Round {rnd}")
-        if sample:
-            for r in sample["races"]:
-                if r["round"] == rnd_str:
-                    name = r["raceName"]
-                    break
-        race_list.append({"round": rnd_str, "raceName": name})
-
-    return {
-        "season": SEASON,
-        "latestRound": str(latest_round),
-        "totalDrivers": len([d for d in all_drivers if d]),
-        "totalConstructors": len([c for c in all_constructors if c]),
-        "races": race_list,
-    }
+        f.write("\n")
 
 
 # ---------------------------------------------------------------------------
-# Main
+# Core logic
 # ---------------------------------------------------------------------------
+
+def fetch_schedule():
+    """Return list of event dicts, one per unique GamedayId, sorted by round."""
+    print("Fetching schedule…")
+    data = fetch_json(SCHEDULE_URL)
+    raw = data.get("Data", {}).get("Value", [])
+
+    # Deduplicate by GamedayId, keep the first entry (has meeting info)
+    seen = {}
+    has_sprint = {}
+    for entry in raw:
+        gid = entry["GamedayId"]
+        if gid not in seen:
+            seen[gid] = entry
+            has_sprint[gid] = False
+        if "Sprint" in entry.get("SessionType", ""):
+            has_sprint[gid] = True
+
+    events = []
+    for gid in sorted(seen.keys()):
+        e = seen[gid]
+        events.append({
+            "gameday_id": gid,
+            "round": str(e.get("MeetingNumber", gid)),
+            "meeting_name": e.get("MeetingName", f"Round {gid}"),
+            "country": e.get("CountryName", ""),
+            "status": e.get("GDStatus", 0),
+            "has_sprint": has_sprint[gid],
+        })
+
+    completed = [e for e in events if e["status"] == 4]
+    print(f"  Found {len(events)} events, {len(completed)} completed")
+    return events
+
+
+def fetch_players(gameday_id: int):
+    """Fetch drivers & constructors for a specific gameday."""
+    url = DRIVERS_URL_TEMPLATE.format(gameday_id=gameday_id)
+    data = fetch_json(url)
+    return data.get("Data", {}).get("Value", [])
+
+
+def build_race_name(event: dict) -> str:
+    """Short race name from the event, e.g. 'Australia'."""
+    country = event.get("country", "")
+    if country:
+        return country
+    name = event.get("meeting_name", "")
+    return name.replace(" Grand Prix", "").strip() or f"Round {event['round']}"
+
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch F1 Fantasy data")
-    parser.add_argument("--dry-run", action="store_true", help="Print data without writing files")
+    parser = argparse.ArgumentParser(description="Fetch F1 Fantasy data from official API")
+    parser.add_argument("--dry-run", action="store_true", help="Show what would be written without writing files")
     args = parser.parse_args()
 
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(project_root, "public", "data", str(SEASON))
 
-    # Determine latest round
-    print("Fetching latest round…")
+    # 1. Fetch schedule
     try:
-        latest_round = get_latest_round()
+        events = fetch_schedule()
     except Exception as exc:
-        print(f"✗ Could not determine latest round: {exc}")
-        sys.exit(1)
-    print(f"Season {SEASON} · latest round: {latest_round}\n")
-
-    # --- Drivers ---
-    print("=== Drivers ===")
-    try:
-        drivers = list_drivers()
-    except Exception as exc:
-        print(f"✗ Could not list drivers: {exc}")
+        print(f"✗ Failed to fetch schedule: {exc}")
         sys.exit(1)
 
-    all_drivers = []
-    for abbr in sorted(drivers):
-        print(f"  Fetching {abbr}…", end=" ", flush=True)
-        data = fetch_driver(abbr, latest_round)
-        if data:
-            pts = data["seasonTotalPoints"]
-            print(f"done ({pts} pts)")
-            path = os.path.join(project_root, "public", "data", str(SEASON), "drivers", f"{abbr}.json")
-            write_json(path, data, dry_run=args.dry_run)
-            all_drivers.append(data)
-        else:
-            print("skipped")
+    completed_events = [e for e in events if e["status"] == 4]
 
-    # --- Constructors ---
-    print("\n=== Constructors ===")
-    try:
-        constructors = list_constructors()
-    except Exception as exc:
-        print(f"✗ Could not list constructors: {exc}")
-        sys.exit(1)
+    if not completed_events:
+        print("⚠  No completed events yet — writing empty data files")
 
-    all_constructors = []
-    for abbr in sorted(constructors):
-        print(f"  Fetching {abbr}…", end=" ", flush=True)
-        data = fetch_constructor(abbr, latest_round)
-        if data:
-            pts = data["seasonTotalPoints"]
-            print(f"done ({pts} pts)")
-            path = os.path.join(project_root, "public", "data", str(SEASON), "constructors", f"{abbr}.json")
-            write_json(path, data, dry_run=args.dry_run)
-            all_constructors.append(data)
-        else:
-            print("skipped")
+    # 2. For each completed event, fetch per-race player data
+    # Accumulate: driver_abbr → { "info": ..., "races": [per-round data] }
+    driver_data = {}
+    constructor_data = {}
 
-    # --- Season summary ---
-    print("\n=== Season ===")
-    season_data = build_season_json(all_drivers, all_constructors, latest_round)
-    season_path = os.path.join(project_root, "public", "data", str(SEASON), "season.json")
+    for event in completed_events:
+        gid = event["gameday_id"]
+        race_name = build_race_name(event)
+        rnd = event["round"]
+        print(f"\nFetching gameday {gid} — Round {rnd} ({race_name})…")
+
+        try:
+            players = fetch_players(gid)
+        except Exception as exc:
+            print(f"  ⚠  Failed to fetch gameday {gid}: {exc}")
+            continue
+
+        for p in players:
+            skill = p.get("Skill")
+            full_name = p.get("FUllName", "")
+            api_tla = p.get("DriverTLA", "")
+            gd_pts = safe_float(p.get("GamedayPoints", 0))
+            season_pts = safe_float(p.get("OverallPpints", 0))
+            value = p.get("Value", 0)
+            picked = safe_int(p.get("SelectedPercentage", 0))
+            team = p.get("TeamName", "")
+
+            if skill == 1:  # Driver
+                abbr = driver_abbr(full_name, api_tla)
+                if abbr not in driver_data:
+                    driver_data[abbr] = {
+                        "abbreviation": abbr,
+                        "displayName": DRIVER_DISPLAY.get(abbr, full_name),
+                        "team": team,
+                        "position": 0,
+                        "value": f"{value}M",
+                        "seasonTotalPoints": safe_int(season_pts),
+                        "percentagePicked": picked,
+                        "races": [],
+                    }
+                # Update with latest event's cumulative data
+                driver_data[abbr]["seasonTotalPoints"] = safe_int(season_pts)
+                driver_data[abbr]["value"] = f"{value}M"
+                driver_data[abbr]["percentagePicked"] = picked
+                if team:
+                    driver_data[abbr]["team"] = team
+
+                driver_data[abbr]["races"].append({
+                    "round": rnd,
+                    "raceName": race_name,
+                    "totalPoints": safe_int(gd_pts),
+                    "race": extract_driver_race(p),
+                    "sprint": extract_driver_sprint(p),
+                })
+                print(f"  {abbr}: {safe_int(gd_pts):+d} pts")
+
+            elif skill == 2:  # Constructor
+                abbr = constructor_abbr(full_name, api_tla)
+                if abbr not in constructor_data:
+                    constructor_data[abbr] = {
+                        "abbreviation": abbr,
+                        "displayName": CONSTRUCTOR_DISPLAY.get(abbr, full_name),
+                        "value": f"{value}M",
+                        "seasonTotalPoints": safe_int(season_pts),
+                        "percentagePicked": picked,
+                        "races": [],
+                    }
+                constructor_data[abbr]["seasonTotalPoints"] = safe_int(season_pts)
+                constructor_data[abbr]["value"] = f"{value}M"
+                constructor_data[abbr]["percentagePicked"] = picked
+
+                constructor_data[abbr]["races"].append({
+                    "round": rnd,
+                    "raceName": race_name,
+                    "totalPoints": safe_int(gd_pts),
+                })
+                print(f"  {abbr}: {safe_int(gd_pts):+d} pts")
+
+        # Brief pause between API calls
+        time.sleep(0.5)
+
+    # 3. Rank drivers by season total points
+    sorted_drivers = sorted(
+        driver_data.values(),
+        key=lambda d: d["seasonTotalPoints"],
+        reverse=True,
+    )
+    for pos, d in enumerate(sorted_drivers, 1):
+        d["position"] = pos
+
+    # 4. Write driver JSON files
+    print("\n=== Writing driver files ===")
+    for d in sorted_drivers:
+        abbr = d["abbreviation"]
+        path = os.path.join(data_dir, "drivers", f"{abbr}.json")
+        write_json(path, d, dry_run=args.dry_run)
+        print(f"  {abbr} — {d['displayName']:25s} {d['seasonTotalPoints']:+4d} pts  ({d['value']})")
+
+    # 5. Write constructor JSON files
+    print("\n=== Writing constructor files ===")
+    sorted_constructors = sorted(
+        constructor_data.values(),
+        key=lambda c: c["seasonTotalPoints"],
+        reverse=True,
+    )
+    for c in sorted_constructors:
+        abbr = c["abbreviation"]
+        path = os.path.join(data_dir, "constructors", f"{abbr}.json")
+        write_json(path, c, dry_run=args.dry_run)
+        print(f"  {abbr} — {c['displayName']:20s} {c['seasonTotalPoints']:+4d} pts  ({c['value']})")
+
+    # 6. Write season.json
+    print("\n=== Writing season.json ===")
+    race_list = []
+    for event in events:
+        race_list.append({
+            "round": event["round"],
+            "raceName": build_race_name(event),
+            "hasSprint": event["has_sprint"],
+        })
+
+    season_data = {
+        "year": SEASON,
+        "races": race_list,
+        "drivers": [d["abbreviation"] for d in sorted_drivers],
+        "constructors": [c["abbreviation"] for c in sorted_constructors],
+    }
+    season_path = os.path.join(data_dir, "season.json")
     write_json(season_path, season_data, dry_run=args.dry_run)
-    print(f"  Wrote season.json ({len(season_data['races'])} races)")
+    print(f"  {len(race_list)} races, {len(sorted_drivers)} drivers, {len(sorted_constructors)} constructors")
 
-    print(f"\n✓ Done — {len(all_drivers)} drivers, {len(all_constructors)} constructors")
+    print(f"\n✓ Done — {len(sorted_drivers)} drivers, {len(sorted_constructors)} constructors")
 
 
 if __name__ == "__main__":

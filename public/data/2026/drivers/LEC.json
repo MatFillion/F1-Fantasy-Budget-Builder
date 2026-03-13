@@ -2,19 +2,19 @@
   "abbreviation": "LEC",
   "displayName": "Charles Leclerc",
   "team": "Ferrari",
-  "position": 5,
-  "value": "23.4M",
-  "seasonTotalPoints": 12,
-  "percentagePicked": 14,
+  "position": 4,
+  "value": "22.8M",
+  "seasonTotalPoints": 29,
+  "percentagePicked": 32,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 12,
+      "totalPoints": 29,
       "race": {
-        "position": 4,
-        "qualifyingPosition": 0,
-        "overtakeBonus": 5,
+        "position": 15,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 6,
         "fastestLap": 0,
         "dotd": 0
       },

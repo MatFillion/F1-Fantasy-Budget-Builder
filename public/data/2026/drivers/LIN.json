@@ -1,20 +1,20 @@
 {
-  "abbreviation": "OCO",
-  "displayName": "Esteban Ocon",
-  "team": "Haas F1 Team",
-  "position": 11,
-  "value": "7.3M",
-  "seasonTotalPoints": 9,
-  "percentagePicked": 14,
+  "abbreviation": "LIN",
+  "displayName": "Arvid Lindblad",
+  "team": "Racing Bulls",
+  "position": 8,
+  "value": "6.2M",
+  "seasonTotalPoints": 15,
+  "percentagePicked": 33,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 9,
+      "totalPoints": 15,
       "race": {
-        "position": 0,
-        "qualifyingPosition": 0,
-        "overtakeBonus": 7,
+        "position": 4,
+        "qualifyingPosition": 2,
+        "overtakeBonus": 8,
         "fastestLap": 0,
         "dotd": 0
       },

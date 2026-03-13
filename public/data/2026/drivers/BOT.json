@@ -1,20 +1,20 @@
 {
-  "abbreviation": "DOO",
-  "displayName": "Jack Doohan",
-  "team": "Alpine",
-  "position": 23,
-  "value": "4.5M",
-  "seasonTotalPoints": -20,
-  "percentagePicked": 8,
+  "abbreviation": "BOT",
+  "displayName": "Valtteri Bottas",
+  "team": "Cadillac",
+  "position": 20,
+  "value": "5.9M",
+  "seasonTotalPoints": -16,
+  "percentagePicked": 28,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": -20,
+      "totalPoints": -16,
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 0,
+        "overtakeBonus": 4,
         "fastestLap": 0,
         "dotd": 0
       },

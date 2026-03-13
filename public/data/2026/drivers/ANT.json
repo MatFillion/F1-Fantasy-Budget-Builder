@@ -2,19 +2,19 @@
   "abbreviation": "ANT",
   "displayName": "Kimi Antonelli",
   "team": "Mercedes",
-  "position": 7,
-  "value": "16.9M",
+  "position": 3,
+  "value": "23.2M",
   "seasonTotalPoints": 32,
-  "percentagePicked": 20,
+  "percentagePicked": 15,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 32,
       "race": {
-        "position": 12,
-        "qualifyingPosition": 0,
-        "overtakeBonus": 8,
+        "position": 18,
+        "qualifyingPosition": 9,
+        "overtakeBonus": 5,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -2,21 +2,21 @@
   "abbreviation": "NOR",
   "displayName": "Lando Norris",
   "team": "McLaren",
-  "position": 1,
-  "value": "30.5M",
-  "seasonTotalPoints": 59,
-  "percentagePicked": 23,
+  "position": 6,
+  "value": "27.2M",
+  "seasonTotalPoints": 21,
+  "percentagePicked": 10,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 59,
+      "totalPoints": 21,
       "race": {
-        "position": 25,
-        "qualifyingPosition": 0,
-        "overtakeBonus": 4,
-        "fastestLap": 10,
-        "dotd": 10
+        "position": 10,
+        "qualifyingPosition": 5,
+        "overtakeBonus": 5,
+        "fastestLap": 0,
+        "dotd": 0
       },
       "sprint": {
         "position": 0,

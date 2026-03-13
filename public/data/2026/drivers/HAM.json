@@ -2,19 +2,19 @@
   "abbreviation": "HAM",
   "displayName": "Lewis Hamilton",
   "team": "Ferrari",
-  "position": 6,
+  "position": 5,
   "value": "22.5M",
-  "seasonTotalPoints": 4,
-  "percentagePicked": 11,
+  "seasonTotalPoints": 25,
+  "percentagePicked": 15,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 4,
+      "totalPoints": 25,
       "race": {
-        "position": 1,
-        "qualifyingPosition": 0,
-        "overtakeBonus": 2,
+        "position": 12,
+        "qualifyingPosition": 4,
+        "overtakeBonus": 6,
         "fastestLap": 0,
         "dotd": 0
       },

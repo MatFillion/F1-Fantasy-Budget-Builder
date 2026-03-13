@@ -1,0 +1,14 @@
+{
+  "abbreviation": "AUD",
+  "displayName": "Audi",
+  "value": "6.6M",
+  "seasonTotalPoints": 0,
+  "percentagePicked": 21,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 0
+    }
+  ]
+}

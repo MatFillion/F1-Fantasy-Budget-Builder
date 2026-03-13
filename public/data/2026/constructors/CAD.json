@@ -1,0 +1,14 @@
+{
+  "abbreviation": "CAD",
+  "displayName": "Cadillac",
+  "value": "6.0M",
+  "seasonTotalPoints": -13,
+  "percentagePicked": 10,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": -13
+    }
+  ]
+}

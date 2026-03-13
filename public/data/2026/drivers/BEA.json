@@ -1,20 +1,20 @@
 {
   "abbreviation": "BEA",
   "displayName": "Oliver Bearman",
-  "team": "Haas",
-  "position": 8,
-  "value": "8.9M",
-  "seasonTotalPoints": 2,
-  "percentagePicked": 42,
+  "team": "Haas F1 Team",
+  "position": 7,
+  "value": "7.4M",
+  "seasonTotalPoints": 20,
+  "percentagePicked": 55,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 2,
+      "totalPoints": 20,
       "race": {
-        "position": 0,
+        "position": 6,
         "qualifyingPosition": 0,
-        "overtakeBonus": 1,
+        "overtakeBonus": 9,
         "fastestLap": 0,
         "dotd": 0
       },

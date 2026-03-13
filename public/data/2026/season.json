@@ -5,41 +5,158 @@
       "round": "1",
       "raceName": "Australia",
       "hasSprint": false
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "hasSprint": true
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "hasSprint": false
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "hasSprint": false
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "hasSprint": false
+    },
+    {
+      "round": "6",
+      "raceName": "United States",
+      "hasSprint": true
+    },
+    {
+      "round": "7",
+      "raceName": "Canada",
+      "hasSprint": true
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "hasSprint": false
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "hasSprint": false
+    },
+    {
+      "round": "10",
+      "raceName": "Austria",
+      "hasSprint": false
+    },
+    {
+      "round": "11",
+      "raceName": "United Kingdom",
+      "hasSprint": true
+    },
+    {
+      "round": "12",
+      "raceName": "Belgium",
+      "hasSprint": false
+    },
+    {
+      "round": "13",
+      "raceName": "Hungary",
+      "hasSprint": false
+    },
+    {
+      "round": "14",
+      "raceName": "Netherlands",
+      "hasSprint": true
+    },
+    {
+      "round": "15",
+      "raceName": "Italy",
+      "hasSprint": false
+    },
+    {
+      "round": "16",
+      "raceName": "Spain",
+      "hasSprint": false
+    },
+    {
+      "round": "17",
+      "raceName": "Azerbaijan",
+      "hasSprint": false
+    },
+    {
+      "round": "18",
+      "raceName": "Singapore",
+      "hasSprint": true
+    },
+    {
+      "round": "19",
+      "raceName": "United States",
+      "hasSprint": false
+    },
+    {
+      "round": "20",
+      "raceName": "Mexico",
+      "hasSprint": false
+    },
+    {
+      "round": "21",
+      "raceName": "Brazil",
+      "hasSprint": false
+    },
+    {
+      "round": "22",
+      "raceName": "United States",
+      "hasSprint": false
+    },
+    {
+      "round": "23",
+      "raceName": "Qatar",
+      "hasSprint": false
+    },
+    {
+      "round": "24",
+      "raceName": "United Arab Emirates",
+      "hasSprint": false
     }
   ],
   "drivers": [
-    "ALB",
-    "ALO",
-    "ANT",
-    "BEA",
-    "BOR",
-    "COL",
-    "DOO",
-    "GAS",
-    "HAD",
-    "HAM",
-    "HUL",
-    "LAW",
-    "LEC",
-    "NOR",
-    "OCO",
-    "PIA",
+    "VER",
     "RUS",
+    "ANT",
+    "LEC",
+    "HAM",
+    "NOR",
+    "BEA",
+    "LIN",
+    "BOR",
+    "GAS",
+    "OCO",
     "SAI",
-    "STR",
-    "TSU",
-    "VER"
+    "ALB",
+    "COL",
+    "LAW",
+    "PER",
+    "HAD",
+    "ALO",
+    "PIA",
+    "BOT",
+    "HUL",
+    "STR"
   ],
   "constructors": [
-    "ALP",
-    "AMR",
-    "FER",
-    "HAS",
-    "MCL",
     "MER",
-    "RB",
+    "FER",
     "RBR",
-    "SAU",
-    "WIL"
+    "RCB",
+    "HAS",
+    "ALP",
+    "WIL",
+    "MCL",
+    "AUD",
+    "CAD",
+    "AMR"
   ]
 }

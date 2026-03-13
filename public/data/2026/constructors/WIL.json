@@ -1,14 +1,14 @@
 {
   "abbreviation": "WIL",
   "displayName": "Williams",
-  "value": "18.9M",
-  "seasonTotalPoints": 10,
-  "percentagePicked": 25,
+  "value": "12.0M",
+  "seasonTotalPoints": 20,
+  "percentagePicked": 16,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 10
+      "totalPoints": 20
     }
   ]
 }

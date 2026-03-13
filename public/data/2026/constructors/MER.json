@@ -1,14 +1,14 @@
 {
   "abbreviation": "MER",
   "displayName": "Mercedes",
-  "value": "27.8M",
-  "seasonTotalPoints": 67,
-  "percentagePicked": 19,
+  "value": "29.3M",
+  "seasonTotalPoints": 96,
+  "percentagePicked": 24,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 67
+      "totalPoints": 96
     }
   ]
 }

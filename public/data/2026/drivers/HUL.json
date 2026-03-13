@@ -1,20 +1,20 @@
 {
   "abbreviation": "HUL",
   "displayName": "Nico Hulkenberg",
-  "team": "Kick Sauber",
-  "position": 13,
-  "value": "6.2M",
-  "seasonTotalPoints": 20,
-  "percentagePicked": 32,
+  "team": "Audi",
+  "position": 21,
+  "value": "6.8M",
+  "seasonTotalPoints": -20,
+  "percentagePicked": 39,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 20,
+      "totalPoints": -20,
       "race": {
-        "position": 6,
+        "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 4,
+        "overtakeBonus": 0,
         "fastestLap": 0,
         "dotd": 0
       },

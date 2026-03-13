@@ -2,19 +2,19 @@
   "abbreviation": "GAS",
   "displayName": "Pierre Gasly",
   "team": "Alpine",
-  "position": 16,
-  "value": "5.3M",
-  "seasonTotalPoints": 1,
-  "percentagePicked": 20,
+  "position": 10,
+  "value": "12.0M",
+  "seasonTotalPoints": 11,
+  "percentagePicked": 13,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
-      "totalPoints": 1,
+      "totalPoints": 11,
       "race": {
-        "position": 0,
+        "position": 1,
         "qualifyingPosition": 0,
-        "overtakeBonus": 1,
+        "overtakeBonus": 6,
         "fastestLap": 0,
         "dotd": 0
       },

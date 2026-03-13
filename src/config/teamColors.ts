@@ -14,7 +14,8 @@ export const teamColors: Record<string, TeamColor> = {
   'Williams':        { primary: '#00A0DD', secondary: '#041E42', text: '#FFFFFF' },
   'Racing Bulls':    { primary: '#6692FF', secondary: '#1634CB', text: '#FFFFFF' },
   'Haas':            { primary: '#B6BABD', secondary: '#E6002B', text: '#000000' },
-  'Kick Sauber':     { primary: '#00E701', secondary: '#000000', text: '#000000' },
+  'Audi':            { primary: '#C0C0C0', secondary: '#FF1E1E', text: '#000000' },
+  'Cadillac':        { primary: '#1E1E1E', secondary: '#C0C0C0', text: '#FFFFFF' },
 };
 
 export function getTeamColor(team: string): TeamColor {
