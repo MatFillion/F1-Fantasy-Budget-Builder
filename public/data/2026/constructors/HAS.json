@@ -2,83 +2,13 @@
   "abbreviation": "HAS",
   "displayName": "Haas",
   "value": "14.4M",
-  "seasonTotalPoints": 429,
+  "seasonTotalPoints": 14,
   "percentagePicked": 18,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 14
-    },
-    {
-      "round": "2",
-      "raceName": "China",
-      "totalPoints": 47
-    },
-    {
-      "round": "3",
-      "raceName": "Japan",
-      "totalPoints": 10
-    },
-    {
-      "round": "4",
-      "raceName": "Bahrain",
-      "totalPoints": 40
-    },
-    {
-      "round": "5",
-      "raceName": "Saudi Arabia",
-      "totalPoints": 12
-    },
-    {
-      "round": "6",
-      "raceName": "Miami",
-      "totalPoints": 0
-    },
-    {
-      "round": "7",
-      "raceName": "Emilia Romagna",
-      "totalPoints": 0
-    },
-    {
-      "round": "8",
-      "raceName": "Monaco",
-      "totalPoints": 25
-    },
-    {
-      "round": "9",
-      "raceName": "Spain",
-      "totalPoints": 6
-    },
-    {
-      "round": "10",
-      "raceName": "Canada",
-      "totalPoints": 22
-    },
-    {
-      "round": "11",
-      "raceName": "Austria",
-      "totalPoints": 37
-    },
-    {
-      "round": "12",
-      "raceName": "United Kingdom",
-      "totalPoints": 25
-    },
-    {
-      "round": "13",
-      "raceName": "Belgium",
-      "totalPoints": 15
-    },
-    {
-      "round": "14",
-      "raceName": "Hungary",
-      "totalPoints": -9
-    },
-    {
-      "round": "15",
-      "raceName": "Netherlands",
-      "totalPoints": 43
     }
   ]
 }

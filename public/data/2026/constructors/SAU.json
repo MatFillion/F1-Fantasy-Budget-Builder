@@ -2,83 +2,13 @@
   "abbreviation": "SAU",
   "displayName": "Sauber",
   "value": "9.9M",
-  "seasonTotalPoints": 271,
+  "seasonTotalPoints": 3,
   "percentagePicked": 15,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 3
-    },
-    {
-      "round": "2",
-      "raceName": "China",
-      "totalPoints": 12
-    },
-    {
-      "round": "3",
-      "raceName": "Japan",
-      "totalPoints": 0
-    },
-    {
-      "round": "4",
-      "raceName": "Bahrain",
-      "totalPoints": -22
-    },
-    {
-      "round": "5",
-      "raceName": "Saudi Arabia",
-      "totalPoints": 10
-    },
-    {
-      "round": "6",
-      "raceName": "Miami",
-      "totalPoints": 0
-    },
-    {
-      "round": "7",
-      "raceName": "Emilia Romagna",
-      "totalPoints": 0
-    },
-    {
-      "round": "8",
-      "raceName": "Monaco",
-      "totalPoints": 7
-    },
-    {
-      "round": "9",
-      "raceName": "Spain",
-      "totalPoints": 52
-    },
-    {
-      "round": "10",
-      "raceName": "Canada",
-      "totalPoints": 26
-    },
-    {
-      "round": "11",
-      "raceName": "Austria",
-      "totalPoints": 45
-    },
-    {
-      "round": "12",
-      "raceName": "United Kingdom",
-      "totalPoints": 14
-    },
-    {
-      "round": "13",
-      "raceName": "Belgium",
-      "totalPoints": 24
-    },
-    {
-      "round": "14",
-      "raceName": "Hungary",
-      "totalPoints": 35
-    },
-    {
-      "round": "15",
-      "raceName": "Netherlands",
-      "totalPoints": 14
     }
   ]
 }

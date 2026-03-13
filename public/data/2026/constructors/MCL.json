@@ -2,83 +2,13 @@
   "abbreviation": "MCL",
   "displayName": "McLaren",
   "value": "35.9M",
-  "seasonTotalPoints": 1605,
+  "seasonTotalPoints": 71,
   "percentagePicked": 39,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 71
-    },
-    {
-      "round": "2",
-      "raceName": "China",
-      "totalPoints": 101
-    },
-    {
-      "round": "3",
-      "raceName": "Japan",
-      "totalPoints": 71
-    },
-    {
-      "round": "4",
-      "raceName": "Bahrain",
-      "totalPoints": 92
-    },
-    {
-      "round": "5",
-      "raceName": "Saudi Arabia",
-      "totalPoints": 86
-    },
-    {
-      "round": "6",
-      "raceName": "Miami",
-      "totalPoints": 0
-    },
-    {
-      "round": "7",
-      "raceName": "Emilia Romagna",
-      "totalPoints": 0
-    },
-    {
-      "round": "8",
-      "raceName": "Monaco",
-      "totalPoints": 83
-    },
-    {
-      "round": "9",
-      "raceName": "Spain",
-      "totalPoints": 88
-    },
-    {
-      "round": "10",
-      "raceName": "Canada",
-      "totalPoints": 40
-    },
-    {
-      "round": "11",
-      "raceName": "Austria",
-      "totalPoints": 100
-    },
-    {
-      "round": "12",
-      "raceName": "United Kingdom",
-      "totalPoints": 90
-    },
-    {
-      "round": "13",
-      "raceName": "Belgium",
-      "totalPoints": 93
-    },
-    {
-      "round": "14",
-      "raceName": "Hungary",
-      "totalPoints": 100
-    },
-    {
-      "round": "15",
-      "raceName": "Netherlands",
-      "totalPoints": 52
     }
   ]
 }
