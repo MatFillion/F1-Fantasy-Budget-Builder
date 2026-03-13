@@ -1,68 +1,115 @@
 {
-  "season": 2026,
-  "latestRound": "15",
-  "totalDrivers": 21,
-  "totalConstructors": 10,
+  "year": 2026,
   "races": [
     {
       "round": "1",
-      "raceName": "Australia"
+      "raceName": "Australia",
+      "hasSprint": false
     },
     {
       "round": "2",
-      "raceName": "China"
+      "raceName": "China",
+      "hasSprint": true
     },
     {
       "round": "3",
-      "raceName": "Japan"
+      "raceName": "Japan",
+      "hasSprint": false
     },
     {
       "round": "4",
-      "raceName": "Bahrain"
+      "raceName": "Bahrain",
+      "hasSprint": false
     },
     {
       "round": "5",
-      "raceName": "Saudi Arabia"
+      "raceName": "Saudi Arabia",
+      "hasSprint": false
     },
     {
       "round": "6",
-      "raceName": "Miami"
+      "raceName": "Miami",
+      "hasSprint": true
     },
     {
       "round": "7",
-      "raceName": "Emilia Romagna"
+      "raceName": "Emilia Romagna",
+      "hasSprint": false
     },
     {
       "round": "8",
-      "raceName": "Monaco"
+      "raceName": "Monaco",
+      "hasSprint": false
     },
     {
       "round": "9",
-      "raceName": "Spain"
+      "raceName": "Spain",
+      "hasSprint": false
     },
     {
       "round": "10",
-      "raceName": "Canada"
+      "raceName": "Canada",
+      "hasSprint": false
     },
     {
       "round": "11",
-      "raceName": "Austria"
+      "raceName": "Austria",
+      "hasSprint": true
     },
     {
       "round": "12",
-      "raceName": "United Kingdom"
+      "raceName": "United Kingdom",
+      "hasSprint": false
     },
     {
       "round": "13",
-      "raceName": "Belgium"
+      "raceName": "Belgium",
+      "hasSprint": true
     },
     {
       "round": "14",
-      "raceName": "Hungary"
+      "raceName": "Hungary",
+      "hasSprint": false
     },
     {
       "round": "15",
-      "raceName": "Netherlands"
+      "raceName": "Netherlands",
+      "hasSprint": false
     }
+  ],
+  "drivers": [
+    "ALB",
+    "ALO",
+    "ANT",
+    "BEA",
+    "BOR",
+    "COL",
+    "DOO",
+    "GAS",
+    "HAD",
+    "HAM",
+    "HUL",
+    "LAW",
+    "LEC",
+    "NOR",
+    "OCO",
+    "PIA",
+    "RUS",
+    "SAI",
+    "STR",
+    "TSU",
+    "VER"
+  ],
+  "constructors": [
+    "ALP",
+    "AMR",
+    "FER",
+    "HAS",
+    "MCL",
+    "MER",
+    "RB",
+    "RBR",
+    "SAU",
+    "WIL"
   ]
 }

@@ -22,14 +22,14 @@ export function useSeasonData(): SeasonData {
         setLoading(true);
 
         // Load season metadata
-        const seasonRes = await fetch('/data/2026/season.json');
+        const seasonRes = await fetch(`${import.meta.env.BASE_URL}data/2026/season.json`);
         if (!seasonRes.ok) throw new Error('Failed to load season data');
         const seasonData: Season = await seasonRes.json();
         setSeason(seasonData);
 
         // Load all drivers in parallel
         const driverPromises = seasonData.drivers.map(async (abbr) => {
-          const res = await fetch(`/data/2026/drivers/${abbr}.json`);
+          const res = await fetch(`${import.meta.env.BASE_URL}data/2026/drivers/${abbr}.json`);
           if (!res.ok) throw new Error(`Failed to load driver ${abbr}`);
           return res.json() as Promise<Driver>;
         });
@@ -38,7 +38,7 @@ export function useSeasonData(): SeasonData {
 
         // Load all constructors in parallel
         const constructorPromises = seasonData.constructors.map(async (abbr) => {
-          const res = await fetch(`/data/2026/constructors/${abbr}.json`);
+          const res = await fetch(`${import.meta.env.BASE_URL}data/2026/constructors/${abbr}.json`);
           if (!res.ok) throw new Error(`Failed to load constructor ${abbr}`);
           return res.json() as Promise<Constructor>;
         });
