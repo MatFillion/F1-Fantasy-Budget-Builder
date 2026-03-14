@@ -35,16 +35,16 @@ function SortArrow({ field, sortConfig }: { field: string; sortConfig: { field: 
 }
 
 function PointsNeededCell({ points, change }: { points: number; change: number }) {
-  if (points <= 0) {
+  // Only show ✓ for positive price changes that are already achieved
+  if (points <= 0 && change > 0) {
     return (
-      <td className="px-1 py-1 text-center font-mono text-[11px] text-gray-500">
+      <td className="px-1 py-1 text-center font-mono text-[11px] text-green-500">
         ✓
       </td>
     );
   }
-  const isPositive = change > 0;
   let colorClass = 'text-red-400';
-  if (points < 20) colorClass = isPositive ? 'text-green-400' : 'text-red-400';
+  if (points < 20) colorClass = change > 0 ? 'text-green-400' : 'text-red-400';
   else if (points <= 40) colorClass = 'text-yellow-400';
 
   return (
