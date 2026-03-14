@@ -1,18 +1,7 @@
-import { useState } from 'react';
 import { useSeasonData } from './hooks/useSeasonData';
-import DriversTable from './components/DriversTable';
-import ConstructorsTable from './components/ConstructorsTable';
 import PricesTable from './components/PricesTable';
-import type { TabId } from './types';
-
-const tabs: { id: TabId; label: string }[] = [
-  { id: 'prices', label: 'Prices' },
-  { id: 'drivers', label: 'Drivers' },
-  { id: 'constructors', label: 'Constructors' },
-];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<TabId>('prices');
   const { season, drivers, constructors, loading, error } = useSeasonData();
 
   return (
@@ -34,22 +23,7 @@ export default function App() {
             )}
           </div>
 
-          {/* Tab Navigation */}
-          <nav className="flex gap-1 mt-3 -mb-px">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 text-sm font-medium rounded-t-lg transition-colors ${
-                  activeTab === tab.id
-                    ? 'bg-gray-800 text-white border-b-2 border-red-500'
-                    : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800/50'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </nav>
+
         </div>
       </header>
 
@@ -72,21 +46,11 @@ export default function App() {
         )}
 
         {!loading && !error && season && (
-          <>
-            {activeTab === 'drivers' && (
-              <DriversTable drivers={drivers} races={season.races} />
-            )}
-            {activeTab === 'constructors' && (
-              <ConstructorsTable constructors={constructors} races={season.races} />
-            )}
-            {activeTab === 'prices' && (
-              <PricesTable
-                drivers={drivers}
-                constructors={constructors}
-                races={season.races}
-              />
-            )}
-          </>
+          <PricesTable
+            drivers={drivers}
+            constructors={constructors}
+            races={season.races}
+          />
         )}
       </main>
 
