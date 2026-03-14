@@ -190,8 +190,12 @@ function TierTable({
           <tr className="bg-[#0d0f14] border-b border-gray-700/60 text-[10px] uppercase tracking-wider text-gray-400">
             <th className="sticky left-0 z-10 bg-[#0d0f14] px-3 py-1.5" />
             <th
+              scope="col"
+              tabIndex={0}
+              aria-sort={sortConfig.field === 'price' ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
               className="px-2 py-1.5 text-right cursor-pointer"
               onClick={() => toggleSort('price')}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSort('price'); } }}
             >
               $<SortArrow field="price" sortConfig={sortConfig} />
             </th>

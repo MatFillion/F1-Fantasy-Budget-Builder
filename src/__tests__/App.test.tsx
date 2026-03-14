@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
+import type { Driver, Constructor } from '../types';
 
 // Mock the data hook
 vi.mock('../hooks/useSeasonData', () => ({
@@ -22,7 +23,7 @@ const mockSeason = {
   constructors: ['RBR'] as string[],
 };
 
-const mockDrivers = [
+const mockDrivers: Driver[] = [
   {
     abbreviation: 'VER',
     displayName: 'Max Verstappen',
@@ -54,7 +55,7 @@ const mockDrivers = [
   },
 ];
 
-const mockConstructors = [
+const mockConstructors: Constructor[] = [
   {
     abbreviation: 'RBR',
     displayName: 'Red Bull Racing',
@@ -68,8 +69,8 @@ const mockConstructors = [
 function mockLoadedState() {
   mockUseSeasonData.mockReturnValue({
     season: mockSeason,
-    drivers: mockDrivers as any,
-    constructors: mockConstructors as any,
+    drivers: mockDrivers,
+    constructors: mockConstructors,
     loading: false,
     error: null,
   });
