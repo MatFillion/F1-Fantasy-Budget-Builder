@@ -43,6 +43,17 @@ function getPriceTier(price: number): 'A' | 'B' {
   return price >= PRICE_TIER_BOUNDARY ? 'A' : 'B';
 }
 
+/**
+ * Calculates the points needed for each price-change tier in the next race.
+ *
+ * Uses the last 3 races (or fewer if the season has just started) to compute
+ * average points-per-million (AvgPPM). The `thresholds` array contains one
+ * entry per performance tier (great / good / poor / terrible) with the exact
+ * points needed to land in that tier after the next race.
+ *
+ * @param currentPrice - Asset price in millions (e.g. `30.0`).
+ * @param recentRacesPoints - All race totals for the season, oldest first.
+ */
 export function calculatePriceChangeThresholds(
   currentPrice: number,
   recentRacesPoints: number[],

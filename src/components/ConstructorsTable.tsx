@@ -2,22 +2,12 @@ import { useCallback } from 'react';
 import type { Constructor, RaceInfo } from '../types';
 import { getTeamColor } from '../config/teamColors';
 import { useSortable } from '../hooks/useSortable';
+import { pointColorClass } from '../utils/tableUtils';
+import { SortArrow } from '../utils/SortArrow';
 
 interface ConstructorsTableProps {
   constructors: Constructor[];
   races: RaceInfo[];
-}
-
-function pointColorClass(pts: number): string {
-  if (pts > 30) return 'text-green-400';
-  if (pts >= 15) return 'text-yellow-400';
-  if (pts >= 5) return 'text-gray-100';
-  return 'text-red-400';
-}
-
-function SortArrow({ field, sortConfig }: { field: string; sortConfig: { field: string; direction: string } }) {
-  if (sortConfig.field !== field) return <span className="ml-1 text-gray-600">▲</span>;
-  return <span className="ml-1 text-gray-300">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>;
 }
 
 export default function ConstructorsTable({ constructors, races }: ConstructorsTableProps) {
@@ -42,28 +32,44 @@ export default function ConstructorsTable({ constructors, races }: ConstructorsT
         <thead>
           <tr className="bg-gray-800 text-gray-300 uppercase tracking-wider">
             <th
+              scope="col"
+              tabIndex={0}
+              aria-sort={sortConfig.field === 'name' ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
               className="sticky left-0 z-10 bg-gray-800 px-3 py-2 text-left cursor-pointer whitespace-nowrap"
               onClick={() => toggleSort('name')}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSort('name'); } }}
             >
               Constructor <SortArrow field="name" sortConfig={sortConfig} />
             </th>
             <th
+              scope="col"
+              tabIndex={0}
+              aria-sort={sortConfig.field === 'total' ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
               className="px-3 py-2 text-right cursor-pointer whitespace-nowrap"
               onClick={() => toggleSort('total')}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSort('total'); } }}
             >
               Total <SortArrow field="total" sortConfig={sortConfig} />
             </th>
             <th
+              scope="col"
+              tabIndex={0}
+              aria-sort={sortConfig.field === 'average' ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
               className="px-3 py-2 text-right cursor-pointer whitespace-nowrap"
               onClick={() => toggleSort('average')}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSort('average'); } }}
             >
               Avg <SortArrow field="average" sortConfig={sortConfig} />
             </th>
             {races.map((race) => (
               <th
                 key={race.round}
+                scope="col"
+                tabIndex={0}
+                aria-sort={sortConfig.field === race.round ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
                 className="px-2 py-2 text-right cursor-pointer whitespace-nowrap"
                 onClick={() => toggleSort(race.round)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSort(race.round); } }}
               >
                 {race.raceName.slice(0, 3).toUpperCase()}
                 {race.hasSprint && <span className="ml-0.5 text-[10px] text-yellow-500">S</span>}

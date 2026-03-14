@@ -6,6 +6,14 @@ interface SortConfig {
   direction: SortDirection;
 }
 
+/**
+ * Sorts items by a configurable field, toggling direction on repeated clicks.
+ *
+ * @param items - Array of items to sort.
+ * @param getSortValue - Extracts a comparable value for a given field from an item.
+ * @param defaultField - Initial sort field (default: `'total'`).
+ * @param defaultDirection - Initial sort direction (default: `'desc'`).
+ */
 export function useSortable<T>(
   items: T[],
   getSortValue: (item: T, field: string) => number | string,

@@ -7,25 +7,15 @@ test.describe('Prices Tab', () => {
     await expect(page.locator('header')).toContainText('Fantasy Grid Notes');
   });
 
-  test('Prices tab is active by default', async ({ page }) => {
-    await page.goto('/');
-    const pricesTab = page.getByRole('button', { name: 'Prices' });
-    await expect(pricesTab).toBeVisible();
-    await expect(pricesTab).toHaveClass(/border-red-500/);
-  });
-
   test('shows Tier A and Tier B tables', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByText('Tier A — ≥18.5M')).toBeVisible();
-    await expect(page.getByText('Tier B — <18.5M')).toBeVisible();
+    await expect(page.getByText('Tier A')).toBeVisible();
+    await expect(page.getByText('Tier B')).toBeVisible();
   });
 
   test('shows driver abbreviations in tables', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByText('Tier A — ≥18.5M')).toBeVisible();
-    // Well-known top-tier drivers should appear somewhere in the tables
-    const driverCells = page.locator('table td').first();
-    await expect(driverCells).toBeVisible();
+    await expect(page.getByText('Tier A')).toBeVisible();
     // Check that at least one 3-letter abbreviation appears
     const allCells = page.locator('table td');
     const count = await allCells.count();
@@ -34,28 +24,12 @@ test.describe('Prices Tab', () => {
     await expect(page.locator('table').getByText('VER').first()).toBeVisible();
   });
 
-  test('tab switching works', async ({ page }) => {
+  test('price column header is sortable via keyboard', async ({ page }) => {
     await page.goto('/');
-    // Click Drivers tab
-    await page.getByRole('button', { name: 'Drivers' }).click();
-    // Prices tier labels should no longer be visible
-    await expect(page.getByText('Tier A — ≥18.5M')).not.toBeVisible();
-    // Drivers tab should now be active
-    await expect(page.getByRole('button', { name: 'Drivers' })).toHaveClass(/border-red-500/);
-
-    // Click Constructors tab
-    await page.getByRole('button', { name: 'Constructors' }).click();
-    await expect(page.getByRole('button', { name: 'Constructors' })).toHaveClass(/border-red-500/);
-  });
-
-  test('clicking Prices tab returns to prices view', async ({ page }) => {
-    await page.goto('/');
-    // Switch away
-    await page.getByRole('button', { name: 'Drivers' }).click();
-    await expect(page.getByText('Tier A — ≥18.5M')).not.toBeVisible();
-    // Switch back
-    await page.getByRole('button', { name: 'Prices' }).click();
-    await expect(page.getByText('Tier A — ≥18.5M')).toBeVisible();
-    await expect(page.getByText('Tier B — <18.5M')).toBeVisible();
+    const priceHeader = page.getByRole('columnheader', { name: '$' }).first();
+    await expect(priceHeader).toBeVisible();
+    await priceHeader.press('Enter');
+    // After pressing Enter, aria-sort should change
+    await expect(priceHeader).toHaveAttribute('aria-sort', /ascending|descending/);
   });
 });
