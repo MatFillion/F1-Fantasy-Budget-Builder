@@ -71,8 +71,8 @@ const defaultProps = {
 
 function getTierContainer(label: RegExp) {
   const heading = screen.getByText(label);
-  // The heading and its sibling table are wrapped in a parent div
-  return heading.closest('div')!.parentElement!;
+  // Tier label is inside a <th> in the table header — use closest table
+  return heading.closest('table')!;
 }
 
 describe('PricesTable', () => {

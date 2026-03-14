@@ -12,12 +12,6 @@ vi.mock('../hooks/useSeasonData', () => ({
 vi.mock('../components/PricesTable', () => ({
   default: () => <div data-testid="prices-table">PricesTable</div>,
 }));
-vi.mock('../components/DriversTable', () => ({
-  default: () => <div data-testid="drivers-table">DriversTable</div>,
-}));
-vi.mock('../components/ConstructorsTable', () => ({
-  default: () => <div data-testid="constructors-table">ConstructorsTable</div>,
-}));
 
 import { useSeasonData } from '../hooks/useSeasonData';
 const mockUseSeasonData = vi.mocked(useSeasonData);
@@ -110,43 +104,11 @@ describe('App', () => {
     expect(screen.getByText('Network failure')).toBeInTheDocument();
   });
 
-  it('has Prices tab active by default', () => {
+  it('shows prices table when data is loaded', () => {
     mockLoadedState();
     render(<App />);
-
-    const pricesButton = screen.getByRole('button', { name: 'Prices' });
-    expect(pricesButton.className).toContain('border-red-500');
-  });
-
-  it('shows Prices as the first tab', () => {
-    mockLoadedState();
-    render(<App />);
-
-    const buttons = screen.getAllByRole('button');
-    expect(buttons[0]).toHaveTextContent('Prices');
-  });
-
-  it('switches to Drivers tab on click', async () => {
-    mockLoadedState();
-    const user = userEvent.setup();
-    render(<App />);
-
-    await user.click(screen.getByRole('button', { name: 'Drivers' }));
-
-    expect(screen.getByTestId('drivers-table')).toBeInTheDocument();
-    expect(screen.queryByTestId('prices-table')).not.toBeInTheDocument();
-  });
-
-  it('switches back to Prices tab after navigating away', async () => {
-    mockLoadedState();
-    const user = userEvent.setup();
-    render(<App />);
-
-    await user.click(screen.getByRole('button', { name: 'Drivers' }));
-    await user.click(screen.getByRole('button', { name: 'Prices' }));
 
     expect(screen.getByTestId('prices-table')).toBeInTheDocument();
-    expect(screen.queryByTestId('drivers-table')).not.toBeInTheDocument();
   });
 
   it('shows season year badge when data is loaded', () => {
