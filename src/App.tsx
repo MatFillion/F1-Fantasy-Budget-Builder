@@ -13,7 +13,7 @@ export default function App() {
             <div className="flex items-center gap-2">
               <span className="text-red-500 font-bold text-lg">F1</span>
               <h1 className="text-base sm:text-lg font-semibold text-white">
-                Fantasy Points Tracker
+                Fantasy Grid Notes
               </h1>
             </div>
             {season && (

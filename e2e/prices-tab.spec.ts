@@ -4,7 +4,7 @@ test.describe('Prices Tab', () => {
   test('page loads and shows header', async ({ page }) => {
     await page.goto('/');
     await expect(page.locator('header')).toContainText('F1');
-    await expect(page.locator('header')).toContainText('Fantasy Points Tracker');
+    await expect(page.locator('header')).toContainText('Fantasy Grid Notes');
   });
 
   test('Prices tab is active by default', async ({ page }) => {

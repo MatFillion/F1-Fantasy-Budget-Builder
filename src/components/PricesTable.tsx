@@ -22,6 +22,7 @@ interface PriceRow {
   priceDisplay: string;
   totalPoints: number;
   priceChange: PriceChangeResult;
+  recentPoints: number[]; // [R-1, R-2] — most recent first
 }
 
 function parsePrice(value: string): number {
@@ -58,7 +59,7 @@ function PointsNeededCell({ points, change }: { points: number; change: number }
   let colorClass = 'text-gray-400';
   if (points < 15) colorClass = change > 0 ? 'text-green-400' : 'text-red-400';
   else if (points <= 35) colorClass = 'text-yellow-400';
-  else colorClass = 'text-gray-500';
+  else colorClass = 'text-gray-400';
 
   return (
     <td className={`px-2 py-1.5 text-center font-mono text-[11px] tabular-nums ${colorClass}`}>
@@ -79,20 +80,6 @@ function TierBadge({ label, positive }: { label: string; positive: boolean }) {
   );
 }
 
-// Expected price-change badge for the last column
-function PriceChangeBadge({ change }: { change: number }) {
-  if (change === 0) return <span className="text-gray-500 font-mono text-[11px]">—</span>;
-  const positive = change > 0;
-  return (
-    <span className={`inline-block px-2 py-0.5 rounded font-mono text-[11px] font-bold
-      ${positive
-        ? 'bg-green-500/20 text-green-300 border border-green-600/40'
-        : 'bg-red-500/20 text-red-300 border border-red-600/40'}`}>
-      {positive ? '+' : ''}{change.toFixed(2)}
-    </span>
-  );
-}
-
 // tier-change headers ordered worst→best (matching column order)
 const TIER_A_HEADERS = [
   { label: '−0.3', positive: false },
@@ -108,7 +95,7 @@ const TIER_B_HEADERS = [
   { label: '+0.6', positive: true },
 ];
 
-const TOTAL_COLS = 7; // name, $, ×4 threshold, xΔ$
+const TOTAL_COLS = 8; // name, $, R-1, R-2, ×4 threshold
 
 function TierTable({
   label,
@@ -155,14 +142,16 @@ function TierTable({
           <td className="px-2 py-1.5 text-right font-mono text-[11px] text-gray-300 tabular-nums whitespace-nowrap">
             {row.priceDisplay}
           </td>
+          {/* R-2 then R-1 */}
+          {[1, 0].map((i) => (
+            <td key={i} className="px-2 py-1.5 text-center font-mono text-[11px] tabular-nums text-gray-400">
+              {row.recentPoints[i] !== undefined ? row.recentPoints[i] : <span className="text-gray-600">—</span>}
+            </td>
+          ))}
           {/* Points needed columns (worst → best) */}
           {thresholds.map((t) => (
             <PointsNeededCell key={t.tier} points={t.pointsNeeded} change={t.priceChange} />
           ))}
-          {/* Expected price change — last column */}
-          <td className="px-2 py-1.5 text-center">
-            <PriceChangeBadge change={pc.expectedPriceChange} />
-          </td>
         </tr>
       );
     });
@@ -172,51 +161,51 @@ function TierTable({
     <div className="overflow-x-auto rounded-xl border border-gray-700/60">
       <table className="w-full border-collapse text-xs bg-[#111318]">
         <thead>
-          {/* Row 1 – tier label + price-change badges */}
-          <tr className="bg-[#0d0f14] border-b border-gray-700/40">
+          {/* Row 1 – tier label + spanning "pts needed" label */}
+          <tr className="bg-[#0d0f14] border-b border-gray-700/20">
             <th
-              colSpan={2}
+              colSpan={4}
               className="sticky left-0 z-10 bg-[#0d0f14] px-3 py-2 text-left"
             >
               <span className="text-[11px] font-bold text-gray-200">{label}</span>
-              <span className="ml-1.5 text-[10px] text-gray-500">{sublabel}</span>
+              <span className="ml-1.5 text-[10px] text-gray-400">{sublabel}</span>
             </th>
+            <th
+              colSpan={4}
+              className="px-3 py-2 text-center text-[10px] text-gray-300 uppercase tracking-wider border-l border-gray-700/40"
+            >
+              Pts needed for price change
+            </th>
+          </tr>
+          {/* Row 2 – price-change badges */}
+          <tr className="bg-[#0d0f14] border-b border-gray-700/20">
+            <th colSpan={4} className="sticky left-0 z-10 bg-[#0d0f14]" />
             {headers.map((h, i) => (
-              <th key={i} className="px-2 py-2 text-center">
+              <th key={i} className="px-2 py-1.5 text-center border-l border-gray-700/40 first:border-l-0">
                 <TierBadge label={h.label} positive={h.positive} />
               </th>
             ))}
-            <th
-              className="px-2 py-2 text-center cursor-pointer text-gray-400 text-[10px] uppercase tracking-wider whitespace-nowrap"
-              onClick={() => toggleSort('lastChange')}
-            >
-              xΔ$<SortArrow field="lastChange" sortConfig={sortConfig} />
-            </th>
           </tr>
-          {/* Row 2 – column labels */}
-          <tr className="bg-[#0d0f14] border-b border-gray-700/60 text-[10px] uppercase tracking-wider text-gray-500">
-            <th
-              className="sticky left-0 z-10 bg-[#0d0f14] px-3 py-1.5 text-left cursor-pointer"
-              onClick={() => toggleSort('name')}
-            >
-              CR<SortArrow field="name" sortConfig={sortConfig} />
-            </th>
+          {/* Row 3 – column labels */}
+          <tr className="bg-[#0d0f14] border-b border-gray-700/60 text-[10px] uppercase tracking-wider text-gray-400">
+            <th className="sticky left-0 z-10 bg-[#0d0f14] px-3 py-1.5" />
             <th
               className="px-2 py-1.5 text-right cursor-pointer"
               onClick={() => toggleSort('price')}
             >
               $<SortArrow field="price" sortConfig={sortConfig} />
             </th>
+            <th className="px-2 py-1.5 text-center">R-2</th>
+            <th className="px-2 py-1.5 text-center">R-1</th>
             {headers.map((_, i) => (
-              <th key={i} className="px-2 py-1.5 text-center text-gray-600">Pts</th>
+              <th key={i} className="px-2 py-1.5 text-center text-gray-400 border-l border-gray-700/40 first:border-l-0">Pts</th>
             ))}
-            <th className="px-2 py-1.5 text-center">↕</th>
           </tr>
         </thead>
         <tbody>
           {driverRows.length > 0 && (
             <tr className="bg-[#0d0f14]/80 border-t border-gray-700/40">
-              <td colSpan={TOTAL_COLS} className="px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-gray-600">
+              <td colSpan={TOTAL_COLS} className="px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-gray-400">
                 Drivers
               </td>
             </tr>
@@ -224,7 +213,7 @@ function TierTable({
           {renderRows(driverRows)}
           {constructorRows.length > 0 && (
             <tr className="bg-[#0d0f14]/80 border-t border-gray-700/40">
-              <td colSpan={TOTAL_COLS} className="px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-gray-600">
+              <td colSpan={TOTAL_COLS} className="px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-gray-400">
                 Constructors
               </td>
             </tr>
@@ -248,6 +237,7 @@ export default function PricesTable({ drivers, constructors }: PricesTableProps)
         priceDisplay: d.value,
         totalPoints: d.seasonTotalPoints,
         priceChange: calculatePriceChangeThresholds(price, d.races.map((r) => r.totalPoints)),
+        recentPoints: d.races.map((r) => r.totalPoints).slice(-2).reverse(),
       };
     }),
   [drivers]);
@@ -263,6 +253,7 @@ export default function PricesTable({ drivers, constructors }: PricesTableProps)
         priceDisplay: c.value,
         totalPoints: c.seasonTotalPoints,
         priceChange: calculatePriceChangeThresholds(price, c.races.map((r) => r.totalPoints)),
+        recentPoints: c.races.map((r) => r.totalPoints).slice(-2).reverse(),
       };
     }),
   [constructors]);
@@ -273,7 +264,6 @@ export default function PricesTable({ drivers, constructors }: PricesTableProps)
         case 'name': return row.abbreviation;
         case 'price': return row.price;
         case 'total': return row.totalPoints;
-        case 'lastChange': return row.priceChange.expectedPriceChange;
         default: return row.abbreviation;
       }
     },
