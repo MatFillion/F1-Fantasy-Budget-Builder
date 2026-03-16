@@ -2,9 +2,9 @@
   "abbreviation": "OCO",
   "displayName": "Esteban Ocon",
   "team": "Haas F1 Team",
-  "position": 11,
-  "value": "7.3M",
-  "seasonTotalPoints": 9,
+  "position": 9,
+  "value": "7.9M",
+  "seasonTotalPoints": 33,
   "percentagePicked": 14,
   "races": [
     {
@@ -15,6 +15,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 7,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 24,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 30,
         "fastestLap": 0,
         "dotd": 0
       },

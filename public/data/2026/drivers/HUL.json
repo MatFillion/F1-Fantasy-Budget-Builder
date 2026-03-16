@@ -2,10 +2,10 @@
   "abbreviation": "HUL",
   "displayName": "Nico Hulkenberg",
   "team": "Audi",
-  "position": 21,
-  "value": "6.8M",
-  "seasonTotalPoints": -20,
-  "percentagePicked": 39,
+  "position": 18,
+  "value": "6.2M",
+  "seasonTotalPoints": -13,
+  "percentagePicked": 34,
   "races": [
     {
       "round": "1",
@@ -15,6 +15,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 0,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 7,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 17,
         "fastestLap": 0,
         "dotd": 0
       },

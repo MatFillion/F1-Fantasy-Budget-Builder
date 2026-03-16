@@ -2,10 +2,10 @@
   "abbreviation": "ANT",
   "displayName": "Kimi Antonelli",
   "team": "Mercedes",
-  "position": 3,
-  "value": "23.2M",
-  "seasonTotalPoints": 32,
-  "percentagePicked": 15,
+  "position": 1,
+  "value": "23.5M",
+  "seasonTotalPoints": 100,
+  "percentagePicked": 20,
   "races": [
     {
       "round": "1",
@@ -20,6 +20,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 68,
+      "race": {
+        "position": 43,
+        "qualifyingPosition": 19,
+        "overtakeBonus": 17,
+        "fastestLap": 10,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 4,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

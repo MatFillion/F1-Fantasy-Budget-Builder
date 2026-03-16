@@ -1,14 +1,19 @@
 {
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
-  "value": "6.3M",
-  "seasonTotalPoints": 35,
-  "percentagePicked": 23,
+  "value": "6.9M",
+  "seasonTotalPoints": 85,
+  "percentagePicked": 31,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 35
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 50
     }
   ]
 }

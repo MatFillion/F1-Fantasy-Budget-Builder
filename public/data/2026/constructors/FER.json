@@ -1,14 +1,19 @@
 {
   "abbreviation": "FER",
   "displayName": "Ferrari",
-  "value": "23.3M",
-  "seasonTotalPoints": 69,
-  "percentagePicked": 42,
+  "value": "23.6M",
+  "seasonTotalPoints": 188,
+  "percentagePicked": 40,
   "races": [
     {
       "round": "1",
       "raceName": "Australia",
       "totalPoints": 69
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 119
     }
   ]
 }

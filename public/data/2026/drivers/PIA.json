@@ -2,10 +2,10 @@
   "abbreviation": "PIA",
   "displayName": "Oscar Piastri",
   "team": "McLaren",
-  "position": 19,
-  "value": "25.5M",
-  "seasonTotalPoints": -14,
-  "percentagePicked": 16,
+  "position": 21,
+  "value": "25.2M",
+  "seasonTotalPoints": -21,
+  "percentagePicked": 11,
   "races": [
     {
       "round": "1",
@@ -20,6 +20,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": -7,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 12,
+        "overtakeBonus": 5,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 3,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0
