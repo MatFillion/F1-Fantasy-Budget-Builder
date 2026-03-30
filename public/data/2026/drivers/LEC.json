@@ -2,10 +2,10 @@
   "abbreviation": "LEC",
   "displayName": "Charles Leclerc",
   "team": "Ferrari",
-  "position": 3,
-  "value": "23.1M",
-  "seasonTotalPoints": 80,
-  "percentagePicked": 31,
+  "position": 2,
+  "value": "23.4M",
+  "seasonTotalPoints": 111,
+  "percentagePicked": 30,
   "races": [
     {
       "round": "1",
@@ -38,6 +38,24 @@
       },
       "sprint": {
         "position": 7,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 31,
+      "race": {
+        "position": 42,
+        "qualifyingPosition": 21,
+        "overtakeBonus": 30,
+        "fastestLap": 5,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

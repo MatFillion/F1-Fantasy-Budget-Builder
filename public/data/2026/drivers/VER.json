@@ -3,9 +3,9 @@
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
   "position": 5,
-  "value": "28.0M",
-  "seasonTotalPoints": 64,
-  "percentagePicked": 22,
+  "value": "28.1M",
+  "seasonTotalPoints": 77,
+  "percentagePicked": 18,
   "races": [
     {
       "round": "1",
@@ -33,6 +33,24 @@
         "position": 8,
         "qualifyingPosition": 3,
         "overtakeBonus": 45,
+        "fastestLap": 10,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 13,
+      "race": {
+        "position": 12,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 51,
         "fastestLap": 10,
         "dotd": 10
       },

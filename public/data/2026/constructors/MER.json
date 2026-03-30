@@ -1,9 +1,9 @@
 {
   "abbreviation": "MER",
   "displayName": "Mercedes",
-  "value": "29.6M",
-  "seasonTotalPoints": 211,
-  "percentagePicked": 31,
+  "value": "29.9M",
+  "seasonTotalPoints": 303,
+  "percentagePicked": 33,
   "races": [
     {
       "round": "1",
@@ -14,6 +14,11 @@
       "round": "2",
       "raceName": "China",
       "totalPoints": 115
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 92
     }
   ]
 }

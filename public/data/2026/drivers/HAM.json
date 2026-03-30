@@ -3,8 +3,8 @@
   "displayName": "Lewis Hamilton",
   "team": "Ferrari",
   "position": 4,
-  "value": "22.6M",
-  "seasonTotalPoints": 73,
+  "value": "22.9M",
+  "seasonTotalPoints": 92,
   "percentagePicked": 16,
   "races": [
     {
@@ -38,6 +38,24 @@
       },
       "sprint": {
         "position": 6,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 19,
+      "race": {
+        "position": 35,
+        "qualifyingPosition": 17,
+        "overtakeBonus": 30,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

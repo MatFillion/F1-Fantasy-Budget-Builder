@@ -2,10 +2,10 @@
   "abbreviation": "LAW",
   "displayName": "Liam Lawson",
   "team": "Racing Bulls",
-  "position": 7,
-  "value": "6.3M",
-  "seasonTotalPoints": 40,
-  "percentagePicked": 23,
+  "position": 6,
+  "value": "6.9M",
+  "seasonTotalPoints": 50,
+  "percentagePicked": 30,
   "races": [
     {
       "round": "1",
@@ -38,6 +38,24 @@
       },
       "sprint": {
         "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 10,
+      "race": {
+        "position": 8,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 24,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

@@ -1,8 +1,8 @@
 {
   "abbreviation": "ALP",
   "displayName": "Alpine",
-  "value": "13.1M",
-  "seasonTotalPoints": 67,
+  "value": "13.7M",
+  "seasonTotalPoints": 92,
   "percentagePicked": 6,
   "races": [
     {
@@ -14,6 +14,11 @@
       "round": "2",
       "raceName": "China",
       "totalPoints": 45
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 25
     }
   ]
 }

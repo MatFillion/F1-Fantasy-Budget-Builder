@@ -2,9 +2,9 @@
   "abbreviation": "RUS",
   "displayName": "George Russell",
   "team": "Mercedes",
-  "position": 2,
-  "value": "27.7M",
-  "seasonTotalPoints": 84,
+  "position": 3,
+  "value": "28.0M",
+  "seasonTotalPoints": 111,
   "percentagePicked": 31,
   "races": [
     {
@@ -38,6 +38,24 @@
       },
       "sprint": {
         "position": 8,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 27,
+      "race": {
+        "position": 55,
+        "qualifyingPosition": 28,
+        "overtakeBonus": 22,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

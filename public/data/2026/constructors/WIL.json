@@ -1,9 +1,9 @@
 {
   "abbreviation": "WIL",
   "displayName": "Williams",
-  "value": "12.6M",
-  "seasonTotalPoints": 42,
-  "percentagePicked": 13,
+  "value": "13.2M",
+  "seasonTotalPoints": 51,
+  "percentagePicked": 11,
   "races": [
     {
       "round": "1",
@@ -14,6 +14,11 @@
       "round": "2",
       "raceName": "China",
       "totalPoints": 22
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 9
     }
   ]
 }

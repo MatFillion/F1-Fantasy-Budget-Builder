@@ -1,9 +1,9 @@
 {
   "abbreviation": "AUD",
   "displayName": "Audi",
-  "value": "6.0M",
-  "seasonTotalPoints": -4,
-  "percentagePicked": 20,
+  "value": "5.4M",
+  "seasonTotalPoints": 19,
+  "percentagePicked": 18,
   "races": [
     {
       "round": "1",
@@ -14,6 +14,11 @@
       "round": "2",
       "raceName": "China",
       "totalPoints": -4
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 23
     }
   ]
 }
