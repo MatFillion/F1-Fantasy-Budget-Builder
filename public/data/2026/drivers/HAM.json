@@ -2,9 +2,9 @@
   "abbreviation": "HAM",
   "displayName": "Lewis Hamilton",
   "team": "Ferrari",
-  "position": 4,
-  "value": "22.9M",
-  "seasonTotalPoints": 92,
+  "position": 5,
+  "value": "23.2M",
+  "seasonTotalPoints": 112,
   "percentagePicked": 16,
   "races": [
     {
@@ -56,6 +56,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "4",
+      "raceName": "United States",
+      "totalPoints": 20,
+      "race": {
+        "position": 43,
+        "qualifyingPosition": 22,
+        "overtakeBonus": 35,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 8,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

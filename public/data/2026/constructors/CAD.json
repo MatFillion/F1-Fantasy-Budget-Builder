@@ -1,8 +1,8 @@
 {
   "abbreviation": "CAD",
   "displayName": "Cadillac",
-  "value": "5.2M",
-  "seasonTotalPoints": 14,
+  "value": "5.0M",
+  "seasonTotalPoints": 38,
   "percentagePicked": 8,
   "races": [
     {
@@ -19,6 +19,11 @@
       "round": "3",
       "raceName": "Japan",
       "totalPoints": 5
+    },
+    {
+      "round": "4",
+      "raceName": "United States",
+      "totalPoints": 24
     }
   ]
 }

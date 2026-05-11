@@ -1,8 +1,8 @@
 {
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
-  "value": "7.5M",
-  "seasonTotalPoints": 103,
+  "value": "8.1M",
+  "seasonTotalPoints": 105,
   "percentagePicked": 31,
   "races": [
     {
@@ -19,6 +19,11 @@
       "round": "3",
       "raceName": "Japan",
       "totalPoints": 18
+    },
+    {
+      "round": "4",
+      "raceName": "United States",
+      "totalPoints": 2
     }
   ]
 }
