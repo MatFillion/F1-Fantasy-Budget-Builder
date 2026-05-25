@@ -2,10 +2,10 @@
   "abbreviation": "ALO",
   "displayName": "Fernando Alonso",
   "team": "Aston Martin",
-  "position": 18,
-  "value": "8.2M",
-  "seasonTotalPoints": 3,
-  "percentagePicked": 7,
+  "position": 20,
+  "value": "8.0M",
+  "seasonTotalPoints": -23,
+  "percentagePicked": 8,
   "races": [
     {
       "round": "1",
@@ -69,6 +69,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 32,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": -26,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 36,
         "fastestLap": 0,
         "dotd": 0
       },

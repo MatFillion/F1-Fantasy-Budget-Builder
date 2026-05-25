@@ -2,9 +2,9 @@
   "abbreviation": "OCO",
   "displayName": "Esteban Ocon",
   "team": "Haas F1 Team",
-  "position": 9,
-  "value": "9.1M",
-  "seasonTotalPoints": 56,
+  "position": 10,
+  "value": "9.7M",
+  "seasonTotalPoints": 64,
   "percentagePicked": 15,
   "races": [
     {
@@ -69,6 +69,24 @@
         "position": 1,
         "qualifyingPosition": 0,
         "overtakeBonus": 44,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 8,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 48,
         "fastestLap": 0,
         "dotd": 0
       },

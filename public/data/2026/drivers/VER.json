@@ -3,8 +3,8 @@
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
   "position": 4,
-  "value": "28.2M",
-  "seasonTotalPoints": 129,
+  "value": "28.3M",
+  "seasonTotalPoints": 155,
   "percentagePicked": 17,
   "races": [
     {
@@ -74,6 +74,24 @@
       },
       "sprint": {
         "position": 4,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 26,
+      "race": {
+        "position": 37,
+        "qualifyingPosition": 17,
+        "overtakeBonus": 74,
+        "fastestLap": 10,
+        "dotd": 20
+      },
+      "sprint": {
+        "position": 6,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

@@ -3,9 +3,9 @@
   "displayName": "Kimi Antonelli",
   "team": "Mercedes",
   "position": 1,
-  "value": "24.1M",
-  "seasonTotalPoints": 192,
-  "percentagePicked": 30,
+  "value": "24.4M",
+  "seasonTotalPoints": 254,
+  "percentagePicked": 32,
   "races": [
     {
       "round": "1",
@@ -74,6 +74,24 @@
       },
       "sprint": {
         "position": 7,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 62,
+      "race": {
+        "position": 118,
+        "qualifyingPosition": 48,
+        "overtakeBonus": 37,
+        "fastestLap": 35,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 13,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

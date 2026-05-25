@@ -2,10 +2,10 @@
   "abbreviation": "LAW",
   "displayName": "Liam Lawson",
   "team": "Racing Bulls",
-  "position": 13,
-  "value": "7.5M",
-  "seasonTotalPoints": 38,
-  "percentagePicked": 31,
+  "position": 11,
+  "value": "8.1M",
+  "seasonTotalPoints": 61,
+  "percentagePicked": 28,
   "races": [
     {
       "round": "1",
@@ -69,6 +69,24 @@
         "position": 8,
         "qualifyingPosition": 3,
         "overtakeBonus": 31,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 23,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 36,
         "fastestLap": 0,
         "dotd": 0
       },

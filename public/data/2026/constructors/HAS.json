@@ -1,9 +1,9 @@
 {
   "abbreviation": "HAS",
   "displayName": "Haas",
-  "value": "9.2M",
-  "seasonTotalPoints": 118,
-  "percentagePicked": 31,
+  "value": "9.8M",
+  "seasonTotalPoints": 137,
+  "percentagePicked": 30,
   "races": [
     {
       "round": "1",
@@ -24,6 +24,11 @@
       "round": "4",
       "raceName": "United States",
       "totalPoints": 23
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 19
     }
   ]
 }

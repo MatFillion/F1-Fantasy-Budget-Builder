@@ -1,8 +1,8 @@
 {
   "abbreviation": "MCL",
   "displayName": "McLaren",
-  "value": "28.6M",
-  "seasonTotalPoints": 194,
+  "value": "28.9M",
+  "seasonTotalPoints": 227,
   "percentagePicked": 12,
   "races": [
     {
@@ -24,6 +24,11 @@
       "round": "4",
       "raceName": "United States",
       "totalPoints": 110
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 33
     }
   ]
 }

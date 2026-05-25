@@ -2,10 +2,10 @@
   "abbreviation": "ALB",
   "displayName": "Alex Albon",
   "team": "Williams",
-  "position": 15,
-  "value": "10.2M",
-  "seasonTotalPoints": 20,
-  "percentagePicked": 8,
+  "position": 16,
+  "value": "9.6M",
+  "seasonTotalPoints": 12,
+  "percentagePicked": 9,
   "races": [
     {
       "round": "1",
@@ -69,6 +69,24 @@
         "position": 1,
         "qualifyingPosition": 0,
         "overtakeBonus": 28,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": -8,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 37,
         "fastestLap": 0,
         "dotd": 0
       },

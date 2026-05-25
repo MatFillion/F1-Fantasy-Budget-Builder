@@ -2,10 +2,10 @@
   "abbreviation": "RUS",
   "displayName": "George Russell",
   "team": "Mercedes",
-  "position": 2,
-  "value": "28.3M",
-  "seasonTotalPoints": 153,
-  "percentagePicked": 27,
+  "position": 3,
+  "value": "28.6M",
+  "seasonTotalPoints": 157,
+  "percentagePicked": 26,
   "races": [
     {
       "round": "1",
@@ -74,6 +74,24 @@
       },
       "sprint": {
         "position": 13,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 4,
+      "race": {
+        "position": 67,
+        "qualifyingPosition": 44,
+        "overtakeBonus": 44,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 21,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

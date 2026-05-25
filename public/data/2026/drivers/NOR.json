@@ -3,8 +3,8 @@
   "displayName": "Lando Norris",
   "team": "McLaren",
   "position": 6,
-  "value": "26.5M",
-  "seasonTotalPoints": 89,
+  "value": "26.4M",
+  "seasonTotalPoints": 95,
   "percentagePicked": 8,
   "races": [
     {
@@ -74,6 +74,24 @@
       },
       "sprint": {
         "position": 13,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 6,
+      "race": {
+        "position": 38,
+        "qualifyingPosition": 31,
+        "overtakeBonus": 28,
+        "fastestLap": 15,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 20,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

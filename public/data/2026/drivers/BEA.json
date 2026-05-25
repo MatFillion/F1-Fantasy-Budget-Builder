@@ -2,10 +2,10 @@
   "abbreviation": "BEA",
   "displayName": "Oliver Bearman",
   "team": "Haas F1 Team",
-  "position": 11,
-  "value": "9.2M",
-  "seasonTotalPoints": 46,
-  "percentagePicked": 60,
+  "position": 12,
+  "value": "9.4M",
+  "seasonTotalPoints": 56,
+  "percentagePicked": 58,
   "races": [
     {
       "round": "1",
@@ -69,6 +69,24 @@
         "position": 16,
         "qualifyingPosition": 1,
         "overtakeBonus": 35,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 10,
+      "race": {
+        "position": 17,
+        "qualifyingPosition": 1,
+        "overtakeBonus": 37,
         "fastestLap": 0,
         "dotd": 0
       },

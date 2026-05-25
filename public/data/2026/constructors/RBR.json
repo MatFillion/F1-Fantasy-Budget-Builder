@@ -1,8 +1,8 @@
 {
   "abbreviation": "RBR",
   "displayName": "Red Bull Racing",
-  "value": "29.1M",
-  "seasonTotalPoints": 143,
+  "value": "29.2M",
+  "seasonTotalPoints": 187,
   "percentagePicked": 7,
   "races": [
     {
@@ -24,6 +24,11 @@
       "round": "4",
       "raceName": "United States",
       "totalPoints": 31
+    },
+    {
+      "round": "5",
+      "raceName": "Canada",
+      "totalPoints": 44
     }
   ]
 }
