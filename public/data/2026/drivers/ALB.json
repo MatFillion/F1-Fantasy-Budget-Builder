@@ -2,10 +2,10 @@
   "abbreviation": "ALB",
   "displayName": "Alex Albon",
   "team": "Williams",
-  "position": 16,
-  "value": "9.6M",
-  "seasonTotalPoints": 12,
-  "percentagePicked": 9,
+  "position": 17,
+  "value": "9.0M",
+  "seasonTotalPoints": 21,
+  "percentagePicked": 8,
   "races": [
     {
       "round": "1",
@@ -68,7 +68,7 @@
       "race": {
         "position": 1,
         "qualifyingPosition": 0,
-        "overtakeBonus": 28,
+        "overtakeBonus": 37,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -87,6 +87,24 @@
         "position": 1,
         "qualifyingPosition": 0,
         "overtakeBonus": 37,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": 9,
+      "race": {
+        "position": 5,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 39,
         "fastestLap": 0,
         "dotd": 0
       },

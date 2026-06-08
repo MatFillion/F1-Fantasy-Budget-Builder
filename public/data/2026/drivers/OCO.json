@@ -2,9 +2,9 @@
   "abbreviation": "OCO",
   "displayName": "Esteban Ocon",
   "team": "Haas F1 Team",
-  "position": 10,
-  "value": "9.7M",
-  "seasonTotalPoints": 64,
+  "position": 9,
+  "value": "9.9M",
+  "seasonTotalPoints": 76,
   "percentagePicked": 15,
   "races": [
     {
@@ -68,7 +68,7 @@
       "race": {
         "position": 1,
         "qualifyingPosition": 0,
-        "overtakeBonus": 44,
+        "overtakeBonus": 48,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -87,6 +87,24 @@
         "position": 1,
         "qualifyingPosition": 0,
         "overtakeBonus": 48,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": 12,
+      "race": {
+        "position": 3,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 50,
         "fastestLap": 0,
         "dotd": 0
       },

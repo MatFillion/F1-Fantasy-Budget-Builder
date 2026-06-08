@@ -2,9 +2,9 @@
   "abbreviation": "BOT",
   "displayName": "Valtteri Bottas",
   "team": "Cadillac",
-  "position": 18,
-  "value": "3.9M",
-  "seasonTotalPoints": 5,
+  "position": 20,
+  "value": "4.5M",
+  "seasonTotalPoints": -15,
   "percentagePicked": 23,
   "races": [
     {
@@ -68,7 +68,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 15,
+        "overtakeBonus": 18,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -83,6 +83,24 @@
       "round": "5",
       "raceName": "Canada",
       "totalPoints": 12,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 18,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": -20,
       "race": {
         "position": 0,
         "qualifyingPosition": 0,

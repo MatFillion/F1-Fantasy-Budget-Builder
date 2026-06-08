@@ -1,8 +1,8 @@
 {
   "abbreviation": "AUD",
   "displayName": "Audi",
-  "value": "5.0M",
-  "seasonTotalPoints": 3,
+  "value": "4.4M",
+  "seasonTotalPoints": 24,
   "percentagePicked": 19,
   "races": [
     {
@@ -29,6 +29,11 @@
       "round": "5",
       "raceName": "Canada",
       "totalPoints": 11
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": 21
     }
   ]
 }

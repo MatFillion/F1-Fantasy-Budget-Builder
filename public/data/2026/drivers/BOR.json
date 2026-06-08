@@ -2,10 +2,10 @@
   "abbreviation": "BOR",
   "displayName": "Gabriel Bortoleto",
   "team": "Audi",
-  "position": 15,
-  "value": "5.2M",
-  "seasonTotalPoints": 14,
-  "percentagePicked": 33,
+  "position": 18,
+  "value": "5.4M",
+  "seasonTotalPoints": 19,
+  "percentagePicked": 35,
   "races": [
     {
       "round": "1",
@@ -68,7 +68,7 @@
       "race": {
         "position": 2,
         "qualifyingPosition": 3,
-        "overtakeBonus": 27,
+        "overtakeBonus": 32,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -82,6 +82,24 @@
     {
       "round": "5",
       "raceName": "Canada",
+      "totalPoints": 5,
+      "race": {
+        "position": 2,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 32,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
       "totalPoints": 5,
       "race": {
         "position": 2,

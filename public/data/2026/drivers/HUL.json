@@ -2,9 +2,9 @@
   "abbreviation": "HUL",
   "displayName": "Nico Hulkenberg",
   "team": "Audi",
-  "position": 22,
-  "value": "4.4M",
-  "seasonTotalPoints": -31,
+  "position": 21,
+  "value": "3.8M",
+  "seasonTotalPoints": -28,
   "percentagePicked": 32,
   "races": [
     {
@@ -68,7 +68,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 1,
-        "overtakeBonus": 25,
+        "overtakeBonus": 31,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -87,6 +87,24 @@
         "position": 0,
         "qualifyingPosition": 1,
         "overtakeBonus": 31,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": 3,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 1,
+        "overtakeBonus": 34,
         "fastestLap": 0,
         "dotd": 0
       },

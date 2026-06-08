@@ -3,9 +3,9 @@
   "displayName": "George Russell",
   "team": "Mercedes",
   "position": 3,
-  "value": "28.6M",
+  "value": "28.5M",
   "seasonTotalPoints": 157,
-  "percentagePicked": 26,
+  "percentagePicked": 24,
   "races": [
     {
       "round": "1",
@@ -67,13 +67,13 @@
       "totalPoints": 42,
       "race": {
         "position": 67,
-        "qualifyingPosition": 34,
-        "overtakeBonus": 38,
+        "qualifyingPosition": 44,
+        "overtakeBonus": 44,
         "fastestLap": 0,
         "dotd": 0
       },
       "sprint": {
-        "position": 13,
+        "position": 21,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0
@@ -92,6 +92,24 @@
       },
       "sprint": {
         "position": 21,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "6",
+      "raceName": "Monaco",
+      "totalPoints": 0,
+      "race": {
+        "position": 67,
+        "qualifyingPosition": 49,
+        "overtakeBonus": 45,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0
