@@ -3,9 +3,9 @@
   "displayName": "Arvid Lindblad",
   "team": "Racing Bulls",
   "position": 16,
-  "value": "6.4M",
-  "seasonTotalPoints": 24,
-  "percentagePicked": 40,
+  "value": "5.8M",
+  "seasonTotalPoints": 31,
+  "percentagePicked": 41,
   "races": [
     {
       "round": "1",
@@ -100,11 +100,29 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 21,
+      "totalPoints": 18,
       "race": {
         "position": 12,
         "qualifyingPosition": 5,
-        "overtakeBonus": 34,
+        "overtakeBonus": 40,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "7",
+      "raceName": "Spain",
+      "totalPoints": 10,
+      "race": {
+        "position": 12,
+        "qualifyingPosition": 5,
+        "overtakeBonus": 40,
         "fastestLap": 0,
         "dotd": 0
       },

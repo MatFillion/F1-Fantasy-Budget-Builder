@@ -3,9 +3,9 @@
   "displayName": "Lewis Hamilton",
   "team": "Ferrari",
   "position": 2,
-  "value": "23.6M",
-  "seasonTotalPoints": 181,
-  "percentagePicked": 16,
+  "value": "23.9M",
+  "seasonTotalPoints": 237,
+  "percentagePicked": 17,
   "races": [
     {
       "round": "1",
@@ -102,11 +102,29 @@
       "raceName": "Monaco",
       "totalPoints": 27,
       "race": {
-        "position": 79,
-        "qualifyingPosition": 36,
-        "overtakeBonus": 38,
+        "position": 104,
+        "qualifyingPosition": 45,
+        "overtakeBonus": 39,
+        "fastestLap": 10,
+        "dotd": 20
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
         "fastestLap": 0,
-        "dotd": 10
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "7",
+      "raceName": "Spain",
+      "totalPoints": 56,
+      "race": {
+        "position": 104,
+        "qualifyingPosition": 45,
+        "overtakeBonus": 39,
+        "fastestLap": 10,
+        "dotd": 20
       },
       "sprint": {
         "position": 0,

@@ -3,8 +3,8 @@
   "displayName": "Lance Stroll",
   "team": "Aston Martin",
   "position": 22,
-  "value": "5.4M",
-  "seasonTotalPoints": -46,
+  "value": "4.8M",
+  "seasonTotalPoints": -66,
   "percentagePicked": 3,
   "races": [
     {
@@ -100,6 +100,24 @@
     {
       "round": "6",
       "raceName": "Monaco",
+      "totalPoints": -20,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 25,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "7",
+      "raceName": "Spain",
       "totalPoints": -20,
       "race": {
         "position": 0,

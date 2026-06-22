@@ -2,10 +2,10 @@
   "abbreviation": "GAS",
   "displayName": "Pierre Gasly",
   "team": "Alpine",
-  "position": 12,
-  "value": "12.2M",
-  "seasonTotalPoints": 65,
-  "percentagePicked": 17,
+  "position": 8,
+  "value": "11.6M",
+  "seasonTotalPoints": 95,
+  "percentagePicked": 18,
   "races": [
     {
       "round": "1",
@@ -100,11 +100,29 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 12,
+      "totalPoints": 25,
       "race": {
-        "position": 25,
+        "position": 40,
         "qualifyingPosition": 12,
-        "overtakeBonus": 36,
+        "overtakeBonus": 40,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "7",
+      "raceName": "Spain",
+      "totalPoints": 17,
+      "race": {
+        "position": 40,
+        "qualifyingPosition": 12,
+        "overtakeBonus": 40,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -3,8 +3,8 @@
   "displayName": "Lando Norris",
   "team": "McLaren",
   "position": 7,
-  "value": "26.5M",
-  "seasonTotalPoints": 78,
+  "value": "26.2M",
+  "seasonTotalPoints": 101,
   "percentagePicked": 8,
   "races": [
     {
@@ -102,8 +102,26 @@
       "raceName": "Monaco",
       "totalPoints": -17,
       "race": {
-        "position": 38,
-        "qualifyingPosition": 34,
+        "position": 53,
+        "qualifyingPosition": 41,
+        "overtakeBonus": 28,
+        "fastestLap": 15,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "7",
+      "raceName": "Spain",
+      "totalPoints": 23,
+      "race": {
+        "position": 53,
+        "qualifyingPosition": 41,
         "overtakeBonus": 28,
         "fastestLap": 15,
         "dotd": 0
