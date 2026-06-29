@@ -2,10 +2,10 @@
   "abbreviation": "HAD",
   "displayName": "Isack Hadjar",
   "team": "Red Bull Racing",
-  "position": 14,
-  "value": "11.5M",
-  "seasonTotalPoints": 47,
-  "percentagePicked": 29,
+  "position": 12,
+  "value": "12.1M",
+  "seasonTotalPoints": 62,
+  "percentagePicked": 30,
   "races": [
     {
       "round": "1",
@@ -123,6 +123,24 @@
         "position": 34,
         "qualifyingPosition": 28,
         "overtakeBonus": 45,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "8",
+      "raceName": "Austria",
+      "totalPoints": 15,
+      "race": {
+        "position": 42,
+        "qualifyingPosition": 31,
+        "overtakeBonus": 47,
         "fastestLap": 0,
         "dotd": 0
       },

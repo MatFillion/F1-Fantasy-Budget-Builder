@@ -1,9 +1,9 @@
 {
   "abbreviation": "HAS",
   "displayName": "Haas",
-  "value": "10.6M",
-  "seasonTotalPoints": 145,
-  "percentagePicked": 28,
+  "value": "10.4M",
+  "seasonTotalPoints": 158,
+  "percentagePicked": 27,
   "races": [
     {
       "round": "1",
@@ -39,6 +39,11 @@
       "round": "7",
       "raceName": "Spain",
       "totalPoints": 16
+    },
+    {
+      "round": "8",
+      "raceName": "Austria",
+      "totalPoints": 13
     }
   ]
 }

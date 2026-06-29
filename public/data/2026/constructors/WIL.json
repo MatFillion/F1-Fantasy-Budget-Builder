@@ -1,8 +1,8 @@
 {
   "abbreviation": "WIL",
   "displayName": "Williams",
-  "value": "15.6M",
-  "seasonTotalPoints": 109,
+  "value": "15.0M",
+  "seasonTotalPoints": 103,
   "percentagePicked": 10,
   "races": [
     {
@@ -39,6 +39,11 @@
       "round": "7",
       "raceName": "Spain",
       "totalPoints": 1
+    },
+    {
+      "round": "8",
+      "raceName": "Austria",
+      "totalPoints": -6
     }
   ]
 }

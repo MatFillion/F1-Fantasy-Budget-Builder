@@ -3,8 +3,8 @@
   "displayName": "Alex Albon",
   "team": "Williams",
   "position": 18,
-  "value": "8.8M",
-  "seasonTotalPoints": 5,
+  "value": "8.2M",
+  "seasonTotalPoints": 12,
   "percentagePicked": 8,
   "races": [
     {
@@ -123,6 +123,24 @@
         "position": 5,
         "qualifyingPosition": 0,
         "overtakeBonus": 43,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "8",
+      "raceName": "Austria",
+      "totalPoints": 7,
+      "race": {
+        "position": 5,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 49,
         "fastestLap": 0,
         "dotd": 0
       },

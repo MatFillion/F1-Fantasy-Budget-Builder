@@ -3,9 +3,9 @@
   "displayName": "Charles Leclerc",
   "team": "Ferrari",
   "position": 5,
-  "value": "23.8M",
-  "seasonTotalPoints": 152,
-  "percentagePicked": 28,
+  "value": "23.5M",
+  "seasonTotalPoints": 161,
+  "percentagePicked": 27,
   "races": [
     {
       "round": "1",
@@ -123,6 +123,24 @@
         "position": 58,
         "qualifyingPosition": 40,
         "overtakeBonus": 50,
+        "fastestLap": 5,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "8",
+      "raceName": "Austria",
+      "totalPoints": 9,
+      "race": {
+        "position": 62,
+        "qualifyingPosition": 49,
+        "overtakeBonus": 52,
         "fastestLap": 5,
         "dotd": 0
       },
