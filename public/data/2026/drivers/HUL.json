@@ -4,8 +4,8 @@
   "team": "Audi",
   "position": 20,
   "value": "3.0M",
-  "seasonTotalPoints": -38,
-  "percentagePicked": 34,
+  "seasonTotalPoints": -45,
+  "percentagePicked": 35,
   "races": [
     {
       "round": "1",
@@ -141,6 +141,24 @@
         "position": 0,
         "qualifyingPosition": 3,
         "overtakeBonus": 40,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": -7,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 55,
         "fastestLap": 0,
         "dotd": 0
       },

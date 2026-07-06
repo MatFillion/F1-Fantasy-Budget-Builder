@@ -3,9 +3,9 @@
   "displayName": "Liam Lawson",
   "team": "Racing Bulls",
   "position": 10,
-  "value": "8.7M",
-  "seasonTotalPoints": 90,
-  "percentagePicked": 31,
+  "value": "8.9M",
+  "seasonTotalPoints": 112,
+  "percentagePicked": 32,
   "races": [
     {
       "round": "1",
@@ -146,6 +146,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": 22,
+      "race": {
+        "position": 36,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 48,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 3,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

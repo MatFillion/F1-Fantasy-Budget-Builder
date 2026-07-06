@@ -2,9 +2,9 @@
   "abbreviation": "COL",
   "displayName": "Franco Colapinto",
   "team": "Alpine",
-  "position": 11,
-  "value": "10.0M",
-  "seasonTotalPoints": 85,
+  "position": 9,
+  "value": "9.8M",
+  "seasonTotalPoints": 112,
   "percentagePicked": 20,
   "races": [
     {
@@ -141,6 +141,24 @@
         "position": 16,
         "qualifyingPosition": 4,
         "overtakeBonus": 49,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": 27,
+      "race": {
+        "position": 18,
+        "qualifyingPosition": 4,
+        "overtakeBonus": 62,
         "fastestLap": 0,
         "dotd": 0
       },

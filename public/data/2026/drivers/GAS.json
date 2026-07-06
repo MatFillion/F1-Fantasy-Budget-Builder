@@ -3,8 +3,8 @@
   "displayName": "Pierre Gasly",
   "team": "Alpine",
   "position": 8,
-  "value": "12.2M",
-  "seasonTotalPoints": 98,
+  "value": "12.8M",
+  "seasonTotalPoints": 121,
   "percentagePicked": 19,
   "races": [
     {
@@ -146,6 +146,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": 23,
+      "race": {
+        "position": 41,
+        "qualifyingPosition": 12,
+        "overtakeBonus": 62,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 1,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

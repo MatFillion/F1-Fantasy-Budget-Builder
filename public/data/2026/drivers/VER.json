@@ -2,9 +2,9 @@
   "abbreviation": "VER",
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
-  "position": 4,
-  "value": "28.0M",
-  "seasonTotalPoints": 209,
+  "position": 5,
+  "value": "27.9M",
+  "seasonTotalPoints": 206,
   "percentagePicked": 17,
   "races": [
     {
@@ -146,6 +146,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": -3,
+      "race": {
+        "position": 67,
+        "qualifyingPosition": 42,
+        "overtakeBonus": 89,
+        "fastestLap": 10,
+        "dotd": 30
+      },
+      "sprint": {
+        "position": 9,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

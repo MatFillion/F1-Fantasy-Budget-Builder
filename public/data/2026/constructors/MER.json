@@ -1,9 +1,9 @@
 {
   "abbreviation": "MER",
   "displayName": "Mercedes",
-  "value": "31.4M",
-  "seasonTotalPoints": 677,
-  "percentagePicked": 35,
+  "value": "31.7M",
+  "seasonTotalPoints": 769,
+  "percentagePicked": 36,
   "races": [
     {
       "round": "1",
@@ -44,6 +44,11 @@
       "round": "8",
       "raceName": "Austria",
       "totalPoints": 85
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": 92
     }
   ]
 }

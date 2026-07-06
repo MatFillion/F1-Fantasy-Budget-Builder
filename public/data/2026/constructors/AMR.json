@@ -1,8 +1,8 @@
 {
   "abbreviation": "AMR",
   "displayName": "Aston Martin",
-  "value": "6.9M",
-  "seasonTotalPoints": -97,
+  "value": "6.3M",
+  "seasonTotalPoints": -81,
   "percentagePicked": 2,
   "races": [
     {
@@ -44,6 +44,11 @@
       "round": "8",
       "raceName": "Austria",
       "totalPoints": -11
+    },
+    {
+      "round": "9",
+      "raceName": "United Kingdom",
+      "totalPoints": 16
     }
   ]
 }
