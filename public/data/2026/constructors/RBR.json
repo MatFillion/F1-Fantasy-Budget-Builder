@@ -1,8 +1,8 @@
 {
   "abbreviation": "RBR",
   "displayName": "Red Bull Racing",
-  "value": "30.0M",
-  "seasonTotalPoints": 364,
+  "value": "30.3M",
+  "seasonTotalPoints": 443,
   "percentagePicked": 7,
   "races": [
     {
@@ -49,6 +49,11 @@
       "round": "9",
       "raceName": "United Kingdom",
       "totalPoints": 32
+    },
+    {
+      "round": "10",
+      "raceName": "Belgium",
+      "totalPoints": 79
     }
   ]
 }

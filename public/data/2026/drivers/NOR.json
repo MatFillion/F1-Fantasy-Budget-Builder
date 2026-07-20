@@ -2,9 +2,9 @@
   "abbreviation": "NOR",
   "displayName": "Lando Norris",
   "team": "McLaren",
-  "position": 7,
-  "value": "25.6M",
-  "seasonTotalPoints": 150,
+  "position": 6,
+  "value": "25.7M",
+  "seasonTotalPoints": 190,
   "percentagePicked": 8,
   "races": [
     {
@@ -164,6 +164,24 @@
       },
       "sprint": {
         "position": 26,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "10",
+      "raceName": "Belgium",
+      "totalPoints": 40,
+      "race": {
+        "position": 77,
+        "qualifyingPosition": 59,
+        "overtakeBonus": 49,
+        "fastestLap": 25,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

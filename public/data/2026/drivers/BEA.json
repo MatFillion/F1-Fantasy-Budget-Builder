@@ -3,8 +3,8 @@
   "displayName": "Oliver Bearman",
   "team": "Haas F1 Team",
   "position": 14,
-  "value": "7.0M",
-  "seasonTotalPoints": 58,
+  "value": "7.2M",
+  "seasonTotalPoints": 66,
   "percentagePicked": 52,
   "races": [
     {
@@ -164,6 +164,24 @@
       },
       "sprint": {
         "position": 1,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "10",
+      "raceName": "Belgium",
+      "totalPoints": 8,
+      "race": {
+        "position": 17,
+        "qualifyingPosition": 1,
+        "overtakeBonus": 67,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0
