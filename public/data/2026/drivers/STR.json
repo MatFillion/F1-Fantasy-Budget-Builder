@@ -4,7 +4,7 @@
   "team": "Aston Martin",
   "position": 22,
   "value": "3.0M",
-  "seasonTotalPoints": -95,
+  "seasonTotalPoints": -80,
   "percentagePicked": 3,
   "races": [
     {
@@ -177,6 +177,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 33,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": 15,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 41,
         "fastestLap": 0,
         "dotd": 0
       },

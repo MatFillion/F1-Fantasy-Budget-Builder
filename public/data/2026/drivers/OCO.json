@@ -2,9 +2,9 @@
   "abbreviation": "OCO",
   "displayName": "Esteban Ocon",
   "team": "Haas F1 Team",
-  "position": 11,
-  "value": "10.3M",
-  "seasonTotalPoints": 116,
+  "position": 12,
+  "value": "10.5M",
+  "seasonTotalPoints": 120,
   "percentagePicked": 13,
   "races": [
     {
@@ -177,6 +177,24 @@
         "position": 3,
         "qualifyingPosition": 0,
         "overtakeBonus": 83,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": 4,
+      "race": {
+        "position": 3,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 88,
         "fastestLap": 0,
         "dotd": 0
       },

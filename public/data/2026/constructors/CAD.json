@@ -1,8 +1,8 @@
 {
   "abbreviation": "CAD",
   "displayName": "Cadillac",
-  "value": "4.2M",
-  "seasonTotalPoints": -21,
+  "value": "3.6M",
+  "seasonTotalPoints": -58,
   "percentagePicked": 8,
   "races": [
     {
@@ -54,6 +54,11 @@
       "round": "10",
       "raceName": "Belgium",
       "totalPoints": -17
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": -37
     }
   ]
 }

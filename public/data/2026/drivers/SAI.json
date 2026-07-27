@@ -3,8 +3,8 @@
   "displayName": "Carlos Sainz",
   "team": "Williams",
   "position": 13,
-  "value": "10.8M",
-  "seasonTotalPoints": 80,
+  "value": "10.2M",
+  "seasonTotalPoints": 82,
   "percentagePicked": 23,
   "races": [
     {
@@ -177,6 +177,24 @@
         "position": 6,
         "qualifyingPosition": 0,
         "overtakeBonus": 70,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": 2,
+      "race": {
+        "position": 6,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 72,
         "fastestLap": 0,
         "dotd": 0
       },

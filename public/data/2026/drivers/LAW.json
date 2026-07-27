@@ -2,9 +2,9 @@
   "abbreviation": "LAW",
   "displayName": "Liam Lawson",
   "team": "Racing Bulls",
-  "position": 12,
-  "value": "9.5M",
-  "seasonTotalPoints": 115,
+  "position": 10,
+  "value": "9.7M",
+  "seasonTotalPoints": 128,
   "percentagePicked": 32,
   "races": [
     {
@@ -177,6 +177,24 @@
         "position": 36,
         "qualifyingPosition": 10,
         "overtakeBonus": 54,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": 13,
+      "race": {
+        "position": 40,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 60,
         "fastestLap": 0,
         "dotd": 0
       },

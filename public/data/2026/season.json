@@ -120,18 +120,18 @@
     "VER",
     "NOR",
     "PIA",
-    "GAS",
     "HAD",
+    "GAS",
+    "LAW",
     "COL",
     "OCO",
-    "LAW",
     "SAI",
     "BEA",
-    "LIN",
     "BOR",
-    "PER",
+    "LIN",
     "ALB",
     "ALO",
+    "PER",
     "HUL",
     "BOT",
     "STR"
@@ -141,12 +141,12 @@
     "FER",
     "MCL",
     "RBR",
-    "ALP",
     "RCB",
+    "ALP",
     "HAS",
     "WIL",
     "AUD",
-    "CAD",
-    "AMR"
+    "AMR",
+    "CAD"
   ]
 }

@@ -1,8 +1,8 @@
 {
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
-  "value": "11.7M",
-  "seasonTotalPoints": 297,
+  "value": "12.3M",
+  "seasonTotalPoints": 344,
   "percentagePicked": 33,
   "races": [
     {
@@ -54,6 +54,11 @@
       "round": "10",
       "raceName": "Belgium",
       "totalPoints": 15
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": 47
     }
   ]
 }

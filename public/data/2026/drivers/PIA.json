@@ -3,8 +3,8 @@
   "displayName": "Oscar Piastri",
   "team": "McLaren",
   "position": 7,
-  "value": "24.8M",
-  "seasonTotalPoints": 171,
+  "value": "24.7M",
+  "seasonTotalPoints": 160,
   "percentagePicked": 9,
   "races": [
     {
@@ -177,6 +177,24 @@
         "position": 75,
         "qualifyingPosition": 50,
         "overtakeBonus": 56,
+        "fastestLap": 0,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Hungary",
+      "totalPoints": -11,
+      "race": {
+        "position": 75,
+        "qualifyingPosition": 56,
+        "overtakeBonus": 59,
         "fastestLap": 0,
         "dotd": 10
       },
