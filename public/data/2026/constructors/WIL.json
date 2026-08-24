@@ -1,9 +1,9 @@
 {
   "abbreviation": "WIL",
   "displayName": "Williams",
-  "value": "13.2M",
-  "seasonTotalPoints": 132,
-  "percentagePicked": 10,
+  "value": "13.0M",
+  "seasonTotalPoints": 147,
+  "percentagePicked": 9,
   "races": [
     {
       "round": "1",
@@ -59,6 +59,11 @@
       "round": "11",
       "raceName": "Hungary",
       "totalPoints": 10
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": 15
     }
   ]
 }

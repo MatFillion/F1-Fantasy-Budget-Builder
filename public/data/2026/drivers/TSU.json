@@ -1,0 +1,29 @@
+{
+  "abbreviation": "TSU",
+  "displayName": "Yuki Tsunoda",
+  "team": "Racing Bulls",
+  "position": 20,
+  "value": "10.3M",
+  "seasonTotalPoints": 5,
+  "percentagePicked": 1,
+  "races": [
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": 5,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 5,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    }
+  ]
+}

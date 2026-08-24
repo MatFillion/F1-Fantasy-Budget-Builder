@@ -2,10 +2,10 @@
   "abbreviation": "STR",
   "displayName": "Lance Stroll",
   "team": "Aston Martin",
-  "position": 22,
+  "position": 23,
   "value": "3.0M",
-  "seasonTotalPoints": -80,
-  "percentagePicked": 3,
+  "seasonTotalPoints": -90,
+  "percentagePicked": 5,
   "races": [
     {
       "round": "1",
@@ -195,6 +195,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 41,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": -10,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 50,
         "fastestLap": 0,
         "dotd": 0
       },

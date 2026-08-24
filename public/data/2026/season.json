@@ -78,36 +78,41 @@
     },
     {
       "round": "16",
+      "raceName": "Bahrain",
+      "hasSprint": false
+    },
+    {
+      "round": "17",
       "raceName": "Singapore",
       "hasSprint": true
     },
     {
-      "round": "17",
-      "raceName": "United States",
-      "hasSprint": false
-    },
-    {
       "round": "18",
-      "raceName": "Mexico",
+      "raceName": "United States",
       "hasSprint": false
     },
     {
       "round": "19",
-      "raceName": "Brazil",
+      "raceName": "Mexico",
       "hasSprint": false
     },
     {
       "round": "20",
-      "raceName": "United States",
+      "raceName": "Brazil",
       "hasSprint": false
     },
     {
       "round": "21",
-      "raceName": "Qatar",
+      "raceName": "United States",
       "hasSprint": false
     },
     {
       "round": "22",
+      "raceName": "Qatar",
+      "hasSprint": false
+    },
+    {
+      "round": "23",
       "raceName": "United Arab Emirates",
       "hasSprint": false
     }
@@ -117,21 +122,22 @@
     "HAM",
     "LEC",
     "RUS",
-    "VER",
     "NOR",
+    "VER",
     "PIA",
-    "HAD",
     "GAS",
-    "LAW",
+    "HAD",
     "COL",
     "OCO",
     "SAI",
-    "BEA",
-    "BOR",
     "LIN",
-    "ALB",
+    "BOR",
+    "BEA",
     "ALO",
     "PER",
+    "LAW",
+    "ALB",
+    "TSU",
     "HUL",
     "BOT",
     "STR"

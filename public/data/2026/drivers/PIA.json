@@ -3,8 +3,8 @@
   "displayName": "Oscar Piastri",
   "team": "McLaren",
   "position": 7,
-  "value": "24.7M",
-  "seasonTotalPoints": 160,
+  "value": "24.4M",
+  "seasonTotalPoints": 181,
   "percentagePicked": 9,
   "races": [
     {
@@ -200,6 +200,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": 21,
+      "race": {
+        "position": 83,
+        "qualifyingPosition": 63,
+        "overtakeBonus": 64,
+        "fastestLap": 0,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 21,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

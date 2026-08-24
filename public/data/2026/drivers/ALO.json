@@ -2,10 +2,10 @@
   "abbreviation": "ALO",
   "displayName": "Fernando Alonso",
   "team": "Aston Martin",
-  "position": 18,
-  "value": "5.6M",
-  "seasonTotalPoints": 5,
-  "percentagePicked": 8,
+  "position": 16,
+  "value": "6.2M",
+  "seasonTotalPoints": 29,
+  "percentagePicked": 9,
   "races": [
     {
       "round": "1",
@@ -195,6 +195,24 @@
         "position": 1,
         "qualifyingPosition": 0,
         "overtakeBonus": 61,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": 24,
+      "race": {
+        "position": 3,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },

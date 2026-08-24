@@ -2,10 +2,10 @@
   "abbreviation": "BOT",
   "displayName": "Valtteri Bottas",
   "team": "Cadillac",
-  "position": 21,
+  "position": 22,
   "value": "3.0M",
-  "seasonTotalPoints": -60,
-  "percentagePicked": 21,
+  "seasonTotalPoints": -78,
+  "percentagePicked": 20,
   "races": [
     {
       "round": "1",
@@ -195,6 +195,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 32,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": -18,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 34,
         "fastestLap": 0,
         "dotd": 0
       },

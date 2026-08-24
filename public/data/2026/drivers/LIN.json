@@ -2,10 +2,10 @@
   "abbreviation": "LIN",
   "displayName": "Arvid Lindblad",
   "team": "Racing Bulls",
-  "position": 16,
-  "value": "7.4M",
-  "seasonTotalPoints": 64,
-  "percentagePicked": 46,
+  "position": 13,
+  "value": "8.0M",
+  "seasonTotalPoints": 71,
+  "percentagePicked": 45,
   "races": [
     {
       "round": "1",
@@ -195,6 +195,24 @@
         "position": 22,
         "qualifyingPosition": 13,
         "overtakeBonus": 56,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "Netherlands",
+      "totalPoints": 7,
+      "race": {
+        "position": 22,
+        "qualifyingPosition": 14,
+        "overtakeBonus": 64,
         "fastestLap": 0,
         "dotd": 0
       },
