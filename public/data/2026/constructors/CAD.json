@@ -64,6 +64,16 @@
       "round": "12",
       "raceName": "Netherlands",
       "totalPoints": -9
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 16
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": -16
     }
   ]
 }

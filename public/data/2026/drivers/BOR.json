@@ -3,8 +3,8 @@
   "displayName": "Gabriel Bortoleto",
   "team": "Audi",
   "position": 14,
-  "value": "7.8M",
-  "seasonTotalPoints": 70,
+  "value": "8.6M",
+  "seasonTotalPoints": 84,
   "percentagePicked": 34,
   "races": [
     {
@@ -213,6 +213,42 @@
         "position": 10,
         "qualifyingPosition": 7,
         "overtakeBonus": 68,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 14,
+      "race": {
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 83,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 0,
+      "race": {
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },

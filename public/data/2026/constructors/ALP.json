@@ -1,8 +1,8 @@
 {
   "abbreviation": "ALP",
   "displayName": "Alpine",
-  "value": "18.8M",
-  "seasonTotalPoints": 345,
+  "value": "19.2M",
+  "seasonTotalPoints": 407,
   "percentagePicked": 7,
   "races": [
     {
@@ -64,6 +64,16 @@
       "round": "12",
       "raceName": "Netherlands",
       "totalPoints": 19
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 38
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 24
     }
   ]
 }

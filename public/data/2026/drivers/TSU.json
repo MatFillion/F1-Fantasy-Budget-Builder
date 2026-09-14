@@ -2,9 +2,9 @@
   "abbreviation": "TSU",
   "displayName": "Yuki Tsunoda",
   "team": "Racing Bulls",
-  "position": 20,
-  "value": "10.3M",
-  "seasonTotalPoints": 5,
+  "position": 19,
+  "value": "9.9M",
+  "seasonTotalPoints": 23,
   "percentagePicked": 1,
   "races": [
     {
@@ -15,6 +15,42 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 5,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 17,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 16,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 1,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 16,
         "fastestLap": 0,
         "dotd": 0
       },

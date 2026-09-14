@@ -2,10 +2,10 @@
   "abbreviation": "HAD",
   "displayName": "Isack Hadjar",
   "team": "Red Bull Racing",
-  "position": 9,
+  "position": 10,
   "value": "14.5M",
   "seasonTotalPoints": 138,
-  "percentagePicked": 29,
+  "percentagePicked": 26,
   "races": [
     {
       "round": "1",
@@ -208,6 +208,42 @@
     {
       "round": "12",
       "raceName": "Netherlands",
+      "totalPoints": 0,
+      "race": {
+        "position": 68,
+        "qualifyingPosition": 41,
+        "overtakeBonus": 71,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 0,
+      "race": {
+        "position": 68,
+        "qualifyingPosition": 41,
+        "overtakeBonus": 71,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
       "totalPoints": 0,
       "race": {
         "position": 68,

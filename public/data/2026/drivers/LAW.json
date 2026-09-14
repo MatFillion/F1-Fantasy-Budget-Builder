@@ -2,10 +2,10 @@
   "abbreviation": "LAW",
   "displayName": "Liam Lawson",
   "team": "Red Bull Racing",
-  "position": 18,
-  "value": "14.5M",
-  "seasonTotalPoints": 12,
-  "percentagePicked": 1,
+  "position": 16,
+  "value": "14.9M",
+  "seasonTotalPoints": 53,
+  "percentagePicked": 3,
   "races": [
     {
       "round": "1",
@@ -231,6 +231,78 @@
         "position": 6,
         "qualifyingPosition": 3,
         "overtakeBonus": 2,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 0,
+      "race": {
+        "position": 40,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 60,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 25,
+      "race": {
+        "position": 6,
+        "qualifyingPosition": 3,
+        "overtakeBonus": 19,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 0,
+      "race": {
+        "position": 40,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 60,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 16,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 6,
+        "overtakeBonus": 22,
         "fastestLap": 0,
         "dotd": 0
       },

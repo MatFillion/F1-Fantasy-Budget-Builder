@@ -4,7 +4,7 @@
   "team": "Cadillac",
   "position": 22,
   "value": "3.0M",
-  "seasonTotalPoints": -78,
+  "seasonTotalPoints": -73,
   "percentagePicked": 20,
   "races": [
     {
@@ -213,6 +213,42 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 34,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 4,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 41,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 1,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 41,
         "fastestLap": 0,
         "dotd": 0
       },

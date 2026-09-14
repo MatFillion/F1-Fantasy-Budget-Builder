@@ -120,24 +120,24 @@
   "drivers": [
     "ANT",
     "HAM",
-    "LEC",
     "RUS",
     "NOR",
     "VER",
+    "LEC",
     "PIA",
     "GAS",
-    "HAD",
     "COL",
+    "HAD",
     "OCO",
-    "SAI",
     "LIN",
+    "SAI",
     "BOR",
     "BEA",
-    "ALO",
-    "PER",
     "LAW",
     "ALB",
+    "ALO",
     "TSU",
+    "PER",
     "HUL",
     "BOT",
     "STR"
@@ -150,9 +150,9 @@
     "RCB",
     "ALP",
     "HAS",
-    "WIL",
     "AUD",
-    "AMR",
-    "CAD"
+    "WIL",
+    "CAD",
+    "AMR"
   ]
 }

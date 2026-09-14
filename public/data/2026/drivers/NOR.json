@@ -2,9 +2,9 @@
   "abbreviation": "NOR",
   "displayName": "Lando Norris",
   "team": "McLaren",
-  "position": 5,
-  "value": "26.1M",
-  "seasonTotalPoints": 284,
+  "position": 4,
+  "value": "26.7M",
+  "seasonTotalPoints": 339,
   "percentagePicked": 9,
   "races": [
     {
@@ -218,6 +218,42 @@
       },
       "sprint": {
         "position": 32,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 32,
+      "race": {
+        "position": 139,
+        "qualifyingPosition": 81,
+        "overtakeBonus": 67,
+        "fastestLap": 30,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 23,
+      "race": {
+        "position": 154,
+        "qualifyingPosition": 91,
+        "overtakeBonus": 67,
+        "fastestLap": 30,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

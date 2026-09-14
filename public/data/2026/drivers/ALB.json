@@ -2,10 +2,10 @@
   "abbreviation": "ALB",
   "displayName": "Alex Albon",
   "team": "Williams",
-  "position": 19,
+  "position": 17,
   "value": "5.8M",
-  "seasonTotalPoints": 8,
-  "percentagePicked": 9,
+  "seasonTotalPoints": 29,
+  "percentagePicked": 10,
   "races": [
     {
       "round": "1",
@@ -213,6 +213,42 @@
         "position": 5,
         "qualifyingPosition": 0,
         "overtakeBonus": 60,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 17,
+      "race": {
+        "position": 5,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 74,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 4,
+      "race": {
+        "position": 5,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 77,
         "fastestLap": 0,
         "dotd": 0
       },

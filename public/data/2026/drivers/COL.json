@@ -2,10 +2,10 @@
   "abbreviation": "COL",
   "displayName": "Franco Colapinto",
   "team": "Alpine",
-  "position": 10,
-  "value": "11.2M",
-  "seasonTotalPoints": 129,
-  "percentagePicked": 19,
+  "position": 9,
+  "value": "10.4M",
+  "seasonTotalPoints": 156,
+  "percentagePicked": 20,
   "races": [
     {
       "round": "1",
@@ -213,6 +213,42 @@
         "position": 19,
         "qualifyingPosition": 4,
         "overtakeBonus": 78,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Italy",
+      "totalPoints": 14,
+      "race": {
+        "position": 21,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 89,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Spain",
+      "totalPoints": 13,
+      "race": {
+        "position": 27,
+        "qualifyingPosition": 9,
+        "overtakeBonus": 92,
         "fastestLap": 0,
         "dotd": 0
       },
