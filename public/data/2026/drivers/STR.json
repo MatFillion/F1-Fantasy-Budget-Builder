@@ -104,7 +104,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 25,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -122,7 +122,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 25,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -140,7 +140,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 28,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -158,7 +158,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 32,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -176,7 +176,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 33,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -194,7 +194,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 41,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -212,7 +212,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 50,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -230,7 +230,7 @@
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
-        "overtakeBonus": 60,
+        "overtakeBonus": 63,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -2,7 +2,7 @@
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
   "value": "14.1M",
-  "seasonTotalPoints": 412,
+  "seasonTotalPoints": 418,
   "percentagePicked": 33,
   "races": [
     {
@@ -33,7 +33,7 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 36
+      "totalPoints": 42
     },
     {
       "round": "7",

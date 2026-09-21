@@ -12,9 +12,9 @@
       "raceName": "Netherlands",
       "totalPoints": 5,
       "race": {
-        "position": 0,
+        "position": 1,
         "qualifyingPosition": 0,
-        "overtakeBonus": 5,
+        "overtakeBonus": 16,
         "fastestLap": 0,
         "dotd": 0
       },

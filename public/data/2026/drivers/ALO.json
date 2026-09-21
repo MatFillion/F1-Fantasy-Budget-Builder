@@ -102,9 +102,9 @@
       "raceName": "Monaco",
       "totalPoints": 15,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 42,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -120,9 +120,9 @@
       "raceName": "Spain",
       "totalPoints": -17,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 42,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -138,9 +138,9 @@
       "raceName": "Austria",
       "totalPoints": 7,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 46,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -156,9 +156,9 @@
       "raceName": "United Kingdom",
       "totalPoints": 8,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 51,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -174,9 +174,9 @@
       "raceName": "Belgium",
       "totalPoints": 5,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 53,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -192,9 +192,9 @@
       "raceName": "Hungary",
       "totalPoints": 10,
       "race": {
-        "position": 1,
+        "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 61,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -212,7 +212,7 @@
       "race": {
         "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 70,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -230,7 +230,7 @@
       "race": {
         "position": 3,
         "qualifyingPosition": 0,
-        "overtakeBonus": 80,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },

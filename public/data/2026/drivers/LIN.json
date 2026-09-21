@@ -4,7 +4,7 @@
   "team": "Racing Bulls",
   "position": 12,
   "value": "8.0M",
-  "seasonTotalPoints": 87,
+  "seasonTotalPoints": 90,
   "percentagePicked": 46,
   "races": [
     {
@@ -100,11 +100,11 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 18,
+      "totalPoints": 21,
       "race": {
-        "position": 12,
-        "qualifyingPosition": 5,
-        "overtakeBonus": 40,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -120,9 +120,9 @@
       "raceName": "Spain",
       "totalPoints": 10,
       "race": {
-        "position": 12,
-        "qualifyingPosition": 5,
-        "overtakeBonus": 40,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -138,9 +138,9 @@
       "raceName": "Austria",
       "totalPoints": 6,
       "race": {
-        "position": 13,
-        "qualifyingPosition": 6,
-        "overtakeBonus": 44,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -156,9 +156,9 @@
       "raceName": "United Kingdom",
       "totalPoints": 18,
       "race": {
-        "position": 19,
-        "qualifyingPosition": 8,
-        "overtakeBonus": 52,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -174,9 +174,9 @@
       "raceName": "Belgium",
       "totalPoints": 5,
       "race": {
-        "position": 21,
-        "qualifyingPosition": 11,
-        "overtakeBonus": 54,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -192,9 +192,9 @@
       "raceName": "Hungary",
       "totalPoints": 4,
       "race": {
-        "position": 22,
-        "qualifyingPosition": 13,
-        "overtakeBonus": 56,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -210,9 +210,9 @@
       "raceName": "Netherlands",
       "totalPoints": 7,
       "race": {
-        "position": 22,
-        "qualifyingPosition": 14,
-        "overtakeBonus": 64,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -228,9 +228,9 @@
       "raceName": "Italy",
       "totalPoints": 11,
       "race": {
-        "position": 26,
-        "qualifyingPosition": 15,
-        "overtakeBonus": 69,
+        "position": 30,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 70,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -246,7 +246,7 @@
       "raceName": "Spain",
       "totalPoints": 5,
       "race": {
-        "position": 28,
+        "position": 30,
         "qualifyingPosition": 16,
         "overtakeBonus": 70,
         "fastestLap": 0,

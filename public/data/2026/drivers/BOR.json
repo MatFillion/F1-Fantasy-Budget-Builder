@@ -102,9 +102,9 @@
       "raceName": "Monaco",
       "totalPoints": 5,
       "race": {
-        "position": 2,
-        "qualifyingPosition": 3,
-        "overtakeBonus": 38,
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -120,9 +120,9 @@
       "raceName": "Spain",
       "totalPoints": 7,
       "race": {
-        "position": 2,
-        "qualifyingPosition": 3,
-        "overtakeBonus": 38,
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -138,9 +138,9 @@
       "raceName": "Austria",
       "totalPoints": 5,
       "race": {
-        "position": 2,
-        "qualifyingPosition": 3,
-        "overtakeBonus": 42,
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -156,9 +156,9 @@
       "raceName": "United Kingdom",
       "totalPoints": 16,
       "race": {
-        "position": 6,
-        "qualifyingPosition": 3,
-        "overtakeBonus": 52,
+        "position": 10,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -175,8 +175,8 @@
       "totalPoints": 8,
       "race": {
         "position": 10,
-        "qualifyingPosition": 5,
-        "overtakeBonus": 54,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -193,8 +193,8 @@
       "totalPoints": 10,
       "race": {
         "position": 10,
-        "qualifyingPosition": 5,
-        "overtakeBonus": 61,
+        "qualifyingPosition": 7,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -212,7 +212,7 @@
       "race": {
         "position": 10,
         "qualifyingPosition": 7,
-        "overtakeBonus": 68,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },
@@ -230,7 +230,7 @@
       "race": {
         "position": 10,
         "qualifyingPosition": 7,
-        "overtakeBonus": 83,
+        "overtakeBonus": 84,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -2,7 +2,7 @@
   "abbreviation": "RBR",
   "displayName": "Red Bull Racing",
   "value": "31.5M",
-  "seasonTotalPoints": 641,
+  "seasonTotalPoints": 645,
   "percentagePicked": 7,
   "races": [
     {
@@ -33,7 +33,7 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 18
+      "totalPoints": 22
     },
     {
       "round": "7",

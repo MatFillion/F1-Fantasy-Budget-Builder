@@ -2,7 +2,7 @@
   "abbreviation": "ALP",
   "displayName": "Alpine",
   "value": "19.2M",
-  "seasonTotalPoints": 407,
+  "seasonTotalPoints": 394,
   "percentagePicked": 7,
   "races": [
     {
@@ -33,7 +33,7 @@
     {
       "round": "6",
       "raceName": "Monaco",
-      "totalPoints": 30
+      "totalPoints": 17
     },
     {
       "round": "7",
