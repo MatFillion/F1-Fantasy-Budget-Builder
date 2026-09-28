@@ -3,8 +3,8 @@
   "displayName": "Kimi Antonelli",
   "team": "Mercedes",
   "position": 1,
-  "value": "26.3M",
-  "seasonTotalPoints": 594,
+  "value": "26.6M",
+  "seasonTotalPoints": 622,
   "percentagePicked": 38,
   "races": [
     {
@@ -249,6 +249,24 @@
         "position": 266,
         "qualifyingPosition": 121,
         "overtakeBonus": 78,
+        "fastestLap": 80,
+        "dotd": 30
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 28,
+      "race": {
+        "position": 276,
+        "qualifyingPosition": 121,
+        "overtakeBonus": 85,
         "fastestLap": 80,
         "dotd": 30
       },

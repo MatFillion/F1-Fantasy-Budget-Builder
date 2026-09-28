@@ -1,8 +1,8 @@
 {
   "abbreviation": "MER",
   "displayName": "Mercedes",
-  "value": "33.2M",
-  "seasonTotalPoints": 1181,
+  "value": "33.5M",
+  "seasonTotalPoints": 1269,
   "percentagePicked": 36,
   "races": [
     {
@@ -74,6 +74,11 @@
       "round": "14",
       "raceName": "Spain",
       "totalPoints": 87
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 88
     }
   ]
 }

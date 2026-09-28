@@ -2,10 +2,10 @@
   "abbreviation": "LEC",
   "displayName": "Charles Leclerc",
   "team": "Ferrari",
-  "position": 6,
-  "value": "24.1M",
-  "seasonTotalPoints": 331,
-  "percentagePicked": 27,
+  "position": 5,
+  "value": "24.0M",
+  "seasonTotalPoints": 351,
+  "percentagePicked": 26,
   "races": [
     {
       "round": "1",
@@ -249,6 +249,24 @@
         "position": 139,
         "qualifyingPosition": 90,
         "overtakeBonus": 70,
+        "fastestLap": 25,
+        "dotd": 20
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 20,
+      "race": {
+        "position": 151,
+        "qualifyingPosition": 99,
+        "overtakeBonus": 71,
         "fastestLap": 25,
         "dotd": 20
       },

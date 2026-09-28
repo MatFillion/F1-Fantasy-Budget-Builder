@@ -1,8 +1,8 @@
 {
   "abbreviation": "RBR",
   "displayName": "Red Bull Racing",
-  "value": "31.5M",
-  "seasonTotalPoints": 645,
+  "value": "31.8M",
+  "seasonTotalPoints": 716,
   "percentagePicked": 7,
   "races": [
     {
@@ -74,6 +74,11 @@
       "round": "14",
       "raceName": "Spain",
       "totalPoints": 59
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 71
     }
   ]
 }

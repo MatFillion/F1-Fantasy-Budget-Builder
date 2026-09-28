@@ -2,9 +2,9 @@
   "abbreviation": "PER",
   "displayName": "Sergio Perez",
   "team": "Cadillac",
-  "position": 20,
+  "position": 18,
   "value": "3.0M",
-  "seasonTotalPoints": 8,
+  "seasonTotalPoints": 19,
   "percentagePicked": 20,
   "races": [
     {
@@ -249,6 +249,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 74,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 11,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 79,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -1,9 +1,9 @@
 {
   "abbreviation": "ALP",
   "displayName": "Alpine",
-  "value": "19.2M",
-  "seasonTotalPoints": 394,
-  "percentagePicked": 7,
+  "value": "19.5M",
+  "seasonTotalPoints": 376,
+  "percentagePicked": 8,
   "races": [
     {
       "round": "1",
@@ -74,6 +74,11 @@
       "round": "14",
       "raceName": "Spain",
       "totalPoints": 24
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": -18
     }
   ]
 }

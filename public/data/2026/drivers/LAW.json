@@ -3,9 +3,9 @@
   "displayName": "Liam Lawson",
   "team": "Red Bull Racing",
   "position": 16,
-  "value": "14.9M",
+  "value": "15.1M",
   "seasonTotalPoints": 53,
-  "percentagePicked": 3,
+  "percentagePicked": 2,
   "races": [
     {
       "round": "1",
@@ -299,6 +299,42 @@
       "round": "14",
       "raceName": "Spain",
       "totalPoints": 16,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 6,
+        "overtakeBonus": 22,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 3,
+      "race": {
+        "position": 42,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 64,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": 0,
       "race": {
         "position": 14,
         "qualifyingPosition": 6,

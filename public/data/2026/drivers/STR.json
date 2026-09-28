@@ -4,7 +4,7 @@
   "team": "Aston Martin",
   "position": 23,
   "value": "3.0M",
-  "seasonTotalPoints": -122,
+  "seasonTotalPoints": -142,
   "percentagePicked": 4,
   "races": [
     {
@@ -245,6 +245,24 @@
       "round": "14",
       "raceName": "Spain",
       "totalPoints": -22,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 63,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Azerbaijan",
+      "totalPoints": -20,
       "race": {
         "position": 0,
         "qualifyingPosition": 0,
