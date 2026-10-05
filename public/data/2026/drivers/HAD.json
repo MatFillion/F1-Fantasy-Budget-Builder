@@ -3,9 +3,9 @@
   "displayName": "Isack Hadjar",
   "team": "Red Bull Racing",
   "position": 8,
-  "value": "14.5M",
-  "seasonTotalPoints": 168,
-  "percentagePicked": 27,
+  "value": "15.1M",
+  "seasonTotalPoints": 193,
+  "percentagePicked": 29,
   "races": [
     {
       "round": "1",
@@ -267,6 +267,24 @@
         "position": 86,
         "qualifyingPosition": 48,
         "overtakeBonus": 74,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 25,
+      "race": {
+        "position": 96,
+        "qualifyingPosition": 56,
+        "overtakeBonus": 78,
         "fastestLap": 0,
         "dotd": 0
       },

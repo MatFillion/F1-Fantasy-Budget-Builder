@@ -3,8 +3,8 @@
   "displayName": "Lewis Hamilton",
   "team": "Ferrari",
   "position": 3,
-  "value": "24.9M",
-  "seasonTotalPoints": 395,
+  "value": "24.6M",
+  "seasonTotalPoints": 427,
   "percentagePicked": 18,
   "races": [
     {
@@ -267,6 +267,24 @@
         "position": 179,
         "qualifyingPosition": 99,
         "overtakeBonus": 82,
+        "fastestLap": 10,
+        "dotd": 20
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 32,
+      "race": {
+        "position": 194,
+        "qualifyingPosition": 108,
+        "overtakeBonus": 91,
         "fastestLap": 10,
         "dotd": 20
       },

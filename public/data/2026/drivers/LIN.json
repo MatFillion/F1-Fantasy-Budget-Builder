@@ -2,9 +2,9 @@
   "abbreviation": "LIN",
   "displayName": "Arvid Lindblad",
   "team": "Racing Bulls",
-  "position": 12,
-  "value": "8.2M",
-  "seasonTotalPoints": 107,
+  "position": 11,
+  "value": "8.8M",
+  "seasonTotalPoints": 135,
   "percentagePicked": 45,
   "races": [
     {
@@ -267,6 +267,24 @@
         "position": 36,
         "qualifyingPosition": 16,
         "overtakeBonus": 73,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 28,
+      "race": {
+        "position": 37,
+        "qualifyingPosition": 16,
+        "overtakeBonus": 88,
         "fastestLap": 0,
         "dotd": 0
       },

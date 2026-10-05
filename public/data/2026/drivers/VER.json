@@ -2,10 +2,10 @@
   "abbreviation": "VER",
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
-  "position": 4,
-  "value": "27.3M",
-  "seasonTotalPoints": 376,
-  "percentagePicked": 18,
+  "position": 2,
+  "value": "27.6M",
+  "seasonTotalPoints": 433,
+  "percentagePicked": 19,
   "races": [
     {
       "round": "1",
@@ -269,6 +269,24 @@
         "overtakeBonus": 118,
         "fastestLap": 10,
         "dotd": 60
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 57,
+      "race": {
+        "position": 176,
+        "qualifyingPosition": 86,
+        "overtakeBonus": 120,
+        "fastestLap": 20,
+        "dotd": 70
       },
       "sprint": {
         "position": 0,

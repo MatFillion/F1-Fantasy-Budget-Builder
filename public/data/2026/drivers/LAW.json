@@ -5,7 +5,7 @@
   "position": 16,
   "value": "15.1M",
   "seasonTotalPoints": 53,
-  "percentagePicked": 2,
+  "percentagePicked": 1,
   "races": [
     {
       "round": "1",
@@ -334,6 +334,42 @@
     {
       "round": "15",
       "raceName": "Azerbaijan",
+      "totalPoints": 0,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 6,
+        "overtakeBonus": 22,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 17,
+      "race": {
+        "position": 48,
+        "qualifyingPosition": 10,
+        "overtakeBonus": 71,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
       "totalPoints": 0,
       "race": {
         "position": 14,

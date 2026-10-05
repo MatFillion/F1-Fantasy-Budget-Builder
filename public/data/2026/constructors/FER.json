@@ -1,9 +1,9 @@
 {
   "abbreviation": "FER",
   "displayName": "Ferrari",
-  "value": "27.5M",
-  "seasonTotalPoints": 927,
-  "percentagePicked": 41,
+  "value": "27.6M",
+  "seasonTotalPoints": 1007,
+  "percentagePicked": 40,
   "races": [
     {
       "round": "1",
@@ -79,6 +79,11 @@
       "round": "15",
       "raceName": "Azerbaijan",
       "totalPoints": 45
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": 80
     }
   ]
 }

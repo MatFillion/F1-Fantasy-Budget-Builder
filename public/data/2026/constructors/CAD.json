@@ -1,8 +1,8 @@
 {
   "abbreviation": "CAD",
   "displayName": "Cadillac",
-  "value": "3.0M",
-  "seasonTotalPoints": -51,
+  "value": "3.6M",
+  "seasonTotalPoints": -63,
   "percentagePicked": 8,
   "races": [
     {
@@ -79,6 +79,11 @@
       "round": "15",
       "raceName": "Azerbaijan",
       "totalPoints": 16
+    },
+    {
+      "round": "16",
+      "raceName": "Bahrain",
+      "totalPoints": -12
     }
   ]
 }
