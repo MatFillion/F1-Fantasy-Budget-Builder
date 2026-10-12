@@ -3,8 +3,8 @@
   "displayName": "Isack Hadjar",
   "team": "Red Bull Racing",
   "position": 8,
-  "value": "15.1M",
-  "seasonTotalPoints": 193,
+  "value": "15.7M",
+  "seasonTotalPoints": 201,
   "percentagePicked": 29,
   "races": [
     {
@@ -285,6 +285,24 @@
         "position": 96,
         "qualifyingPosition": 56,
         "overtakeBonus": 78,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 8,
+      "race": {
+        "position": 97,
+        "qualifyingPosition": 56,
+        "overtakeBonus": 88,
         "fastestLap": 0,
         "dotd": 0
       },

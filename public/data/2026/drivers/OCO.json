@@ -2,9 +2,9 @@
   "abbreviation": "OCO",
   "displayName": "Esteban Ocon",
   "team": "Haas F1 Team",
-  "position": 10,
-  "value": "9.1M",
-  "seasonTotalPoints": 149,
+  "position": 9,
+  "value": "9.3M",
+  "seasonTotalPoints": 161,
   "percentagePicked": 13,
   "races": [
     {
@@ -285,6 +285,24 @@
         "position": 7,
         "qualifyingPosition": 0,
         "overtakeBonus": 125,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 12,
+      "race": {
+        "position": 7,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 132,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -1,8 +1,8 @@
 {
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
-  "value": "15.3M",
-  "seasonTotalPoints": 494,
+  "value": "15.9M",
+  "seasonTotalPoints": 528,
   "percentagePicked": 33,
   "races": [
     {
@@ -84,6 +84,11 @@
       "round": "16",
       "raceName": "Bahrain",
       "totalPoints": 53
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 34
     }
   ]
 }

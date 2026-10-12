@@ -3,9 +3,9 @@
   "displayName": "Lando Norris",
   "team": "McLaren",
   "position": 6,
-  "value": "26.7M",
-  "seasonTotalPoints": 344,
-  "percentagePicked": 9,
+  "value": "26.4M",
+  "seasonTotalPoints": 362,
+  "percentagePicked": 8,
   "races": [
     {
       "round": "1",
@@ -290,6 +290,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 18,
+      "race": {
+        "position": 168,
+        "qualifyingPosition": 108,
+        "overtakeBonus": 84,
+        "fastestLap": 30,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 33,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

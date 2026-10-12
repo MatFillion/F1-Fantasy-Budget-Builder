@@ -3,9 +3,9 @@
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
   "position": 2,
-  "value": "27.6M",
-  "seasonTotalPoints": 433,
-  "percentagePicked": 19,
+  "value": "27.9M",
+  "seasonTotalPoints": 486,
+  "percentagePicked": 21,
   "races": [
     {
       "round": "1",
@@ -290,6 +290,24 @@
       },
       "sprint": {
         "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 53,
+      "race": {
+        "position": 201,
+        "qualifyingPosition": 96,
+        "overtakeBonus": 120,
+        "fastestLap": 20,
+        "dotd": 80
+      },
+      "sprint": {
+        "position": 20,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

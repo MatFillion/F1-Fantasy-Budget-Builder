@@ -3,8 +3,8 @@
   "displayName": "Carlos Sainz",
   "team": "Williams",
   "position": 13,
-  "value": "8.4M",
-  "seasonTotalPoints": 104,
+  "value": "7.8M",
+  "seasonTotalPoints": 117,
   "percentagePicked": 22,
   "races": [
     {
@@ -285,6 +285,24 @@
         "position": 7,
         "qualifyingPosition": 2,
         "overtakeBonus": 109,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 13,
+      "race": {
+        "position": 7,
+        "qualifyingPosition": 2,
+        "overtakeBonus": 113,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -1,8 +1,8 @@
 {
   "abbreviation": "HAS",
   "displayName": "Haas",
-  "value": "10.8M",
-  "seasonTotalPoints": 265,
+  "value": "11.4M",
+  "seasonTotalPoints": 300,
   "percentagePicked": 24,
   "races": [
     {
@@ -84,6 +84,11 @@
       "round": "16",
       "raceName": "Bahrain",
       "totalPoints": 20
+    },
+    {
+      "round": "17",
+      "raceName": "Singapore",
+      "totalPoints": 35
     }
   ]
 }
