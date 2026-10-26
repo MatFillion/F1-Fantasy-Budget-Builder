@@ -420,6 +420,42 @@
         "fastestLap": 0,
         "overtakeBonus": 0
       }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 5,
+      "race": {
+        "position": 56,
+        "qualifyingPosition": 13,
+        "overtakeBonus": 75,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 0,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 6,
+        "overtakeBonus": 22,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
     }
   ]
 }

@@ -2,9 +2,9 @@
   "abbreviation": "GAS",
   "displayName": "Pierre Gasly",
   "team": "Alpine",
-  "position": 10,
-  "value": "10.8M",
-  "seasonTotalPoints": 136,
+  "position": 11,
+  "value": "10.2M",
+  "seasonTotalPoints": 139,
   "percentagePicked": 20,
   "races": [
     {
@@ -308,6 +308,24 @@
       },
       "sprint": {
         "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 3,
+      "race": {
+        "position": 40,
+        "qualifyingPosition": 31,
+        "overtakeBonus": 99,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

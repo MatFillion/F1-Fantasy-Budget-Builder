@@ -5,7 +5,7 @@
   "position": 19,
   "value": "9.7M",
   "seasonTotalPoints": 23,
-  "percentagePicked": 1,
+  "percentagePicked": 0,
   "races": [
     {
       "round": "12",
@@ -100,6 +100,24 @@
     {
       "round": "17",
       "raceName": "Singapore",
+      "totalPoints": 0,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 16,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
       "totalPoints": 0,
       "race": {
         "position": 1,

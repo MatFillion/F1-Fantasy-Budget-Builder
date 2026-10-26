@@ -4,7 +4,7 @@
   "team": "Cadillac",
   "position": 22,
   "value": "3.0M",
-  "seasonTotalPoints": -98,
+  "seasonTotalPoints": -117,
   "percentagePicked": 20,
   "races": [
     {
@@ -303,6 +303,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 44,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": -19,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 45,
         "fastestLap": 0,
         "dotd": 0
       },

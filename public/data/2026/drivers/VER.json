@@ -3,9 +3,9 @@
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
   "position": 2,
-  "value": "27.9M",
-  "seasonTotalPoints": 486,
-  "percentagePicked": 21,
+  "value": "28.2M",
+  "seasonTotalPoints": 513,
+  "percentagePicked": 22,
   "races": [
     {
       "round": "1",
@@ -308,6 +308,24 @@
       },
       "sprint": {
         "position": 20,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 27,
+      "race": {
+        "position": 216,
+        "qualifyingPosition": 105,
+        "overtakeBonus": 124,
+        "fastestLap": 20,
+        "dotd": 80
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0

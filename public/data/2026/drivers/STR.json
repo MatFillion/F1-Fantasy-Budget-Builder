@@ -4,7 +4,7 @@
   "team": "Aston Martin",
   "position": 23,
   "value": "3.0M",
-  "seasonTotalPoints": -159,
+  "seasonTotalPoints": -147,
   "percentagePicked": 4,
   "races": [
     {
@@ -303,6 +303,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 74,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 12,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 79,
         "fastestLap": 0,
         "dotd": 0
       },

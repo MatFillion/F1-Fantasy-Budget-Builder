@@ -3,8 +3,8 @@
   "displayName": "Oscar Piastri",
   "team": "McLaren",
   "position": 7,
-  "value": "23.7M",
-  "seasonTotalPoints": 263,
+  "value": "23.4M",
+  "seasonTotalPoints": 278,
   "percentagePicked": 9,
   "races": [
     {
@@ -308,6 +308,24 @@
       },
       "sprint": {
         "position": 21,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "United States",
+      "totalPoints": 15,
+      "race": {
+        "position": 123,
+        "qualifyingPosition": 95,
+        "overtakeBonus": 107,
+        "fastestLap": 0,
+        "dotd": 10
+      },
+      "sprint": {
+        "position": 0,
         "qualifyingPosition": 0,
         "fastestLap": 0,
         "overtakeBonus": 0
