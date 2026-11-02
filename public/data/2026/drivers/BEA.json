@@ -3,8 +3,8 @@
   "displayName": "Oliver Bearman",
   "team": "Haas F1 Team",
   "position": 15,
-  "value": "6.4M",
-  "seasonTotalPoints": 81,
+  "value": "6.2M",
+  "seasonTotalPoints": 66,
   "percentagePicked": 52,
   "races": [
     {
@@ -321,6 +321,24 @@
         "position": 19,
         "qualifyingPosition": 1,
         "overtakeBonus": 111,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": -15,
+      "race": {
+        "position": 19,
+        "qualifyingPosition": 1,
+        "overtakeBonus": 116,
         "fastestLap": 0,
         "dotd": 0
       },

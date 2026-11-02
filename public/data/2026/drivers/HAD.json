@@ -3,8 +3,8 @@
   "displayName": "Isack Hadjar",
   "team": "Red Bull Racing",
   "position": 8,
-  "value": "16.3M",
-  "seasonTotalPoints": 214,
+  "value": "16.5M",
+  "seasonTotalPoints": 233,
   "percentagePicked": 29,
   "races": [
     {
@@ -321,6 +321,24 @@
         "position": 105,
         "qualifyingPosition": 64,
         "overtakeBonus": 88,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 19,
+      "race": {
+        "position": 107,
+        "qualifyingPosition": 68,
+        "overtakeBonus": 103,
         "fastestLap": 0,
         "dotd": 0
       },

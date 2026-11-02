@@ -94,6 +94,11 @@
       "round": "18",
       "raceName": "United States",
       "totalPoints": -18
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 0
     }
   ]
 }

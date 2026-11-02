@@ -3,9 +3,9 @@
   "displayName": "Charles Leclerc",
   "team": "Ferrari",
   "position": 4,
-  "value": "24.1M",
-  "seasonTotalPoints": 480,
-  "percentagePicked": 26,
+  "value": "24.4M",
+  "seasonTotalPoints": 500,
+  "percentagePicked": 27,
   "races": [
     {
       "round": "1",
@@ -321,6 +321,24 @@
         "position": 199,
         "qualifyingPosition": 121,
         "overtakeBonus": 92,
+        "fastestLap": 45,
+        "dotd": 30
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 20,
+      "race": {
+        "position": 211,
+        "qualifyingPosition": 129,
+        "overtakeBonus": 93,
         "fastestLap": 45,
         "dotd": 30
       },

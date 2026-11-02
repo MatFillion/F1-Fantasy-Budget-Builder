@@ -1,0 +1,29 @@
+{
+  "abbreviation": "HIR",
+  "displayName": "Ryo Hirakawa",
+  "team": "Haas F1 Team",
+  "position": 21,
+  "value": "6.0M",
+  "seasonTotalPoints": 16,
+  "percentagePicked": 0,
+  "races": [
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 16,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 7,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    }
+  ]
+}

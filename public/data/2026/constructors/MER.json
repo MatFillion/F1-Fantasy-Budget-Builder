@@ -2,7 +2,7 @@
   "abbreviation": "MER",
   "displayName": "Mercedes",
   "value": "34.0M",
-  "seasonTotalPoints": 1430,
+  "seasonTotalPoints": 1482,
   "percentagePicked": 35,
   "races": [
     {
@@ -94,6 +94,11 @@
       "round": "18",
       "raceName": "United States",
       "totalPoints": 57
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 52
     }
   ]
 }

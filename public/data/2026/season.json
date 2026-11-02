@@ -127,17 +127,18 @@
     "PIA",
     "HAD",
     "OCO",
-    "LIN",
     "GAS",
+    "LIN",
     "SAI",
     "COL",
     "BOR",
     "BEA",
     "LAW",
     "HUL",
-    "ALO",
-    "TSU",
     "PER",
+    "TSU",
+    "ALO",
+    "HIR",
     "ALB",
     "BOT",
     "STR"
@@ -152,7 +153,7 @@
     "HAS",
     "AUD",
     "WIL",
-    "AMR",
-    "CAD"
+    "CAD",
+    "AMR"
   ]
 }

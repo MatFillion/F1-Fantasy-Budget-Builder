@@ -1,8 +1,8 @@
 {
   "abbreviation": "RCB",
   "displayName": "Racing Bulls",
-  "value": "16.5M",
-  "seasonTotalPoints": 559,
+  "value": "17.1M",
+  "seasonTotalPoints": 582,
   "percentagePicked": 33,
   "races": [
     {
@@ -94,6 +94,11 @@
       "round": "18",
       "raceName": "United States",
       "totalPoints": 31
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 23
     }
   ]
 }

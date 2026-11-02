@@ -3,8 +3,8 @@
   "displayName": "Carlos Sainz",
   "team": "Williams",
   "position": 12,
-  "value": "8.4M",
-  "seasonTotalPoints": 120,
+  "value": "8.2M",
+  "seasonTotalPoints": 127,
   "percentagePicked": 22,
   "races": [
     {
@@ -321,6 +321,24 @@
         "position": 7,
         "qualifyingPosition": 2,
         "overtakeBonus": 118,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 7,
+      "race": {
+        "position": 7,
+        "qualifyingPosition": 2,
+        "overtakeBonus": 122,
         "fastestLap": 0,
         "dotd": 0
       },

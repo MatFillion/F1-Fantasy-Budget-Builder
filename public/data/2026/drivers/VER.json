@@ -3,9 +3,9 @@
   "displayName": "Max Verstappen",
   "team": "Red Bull Racing",
   "position": 2,
-  "value": "28.2M",
-  "seasonTotalPoints": 513,
-  "percentagePicked": 22,
+  "value": "28.5M",
+  "seasonTotalPoints": 562,
+  "percentagePicked": 21,
   "races": [
     {
       "round": "1",
@@ -323,6 +323,24 @@
         "overtakeBonus": 124,
         "fastestLap": 20,
         "dotd": 80
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "19",
+      "raceName": "Mexico",
+      "totalPoints": 49,
+      "race": {
+        "position": 241,
+        "qualifyingPosition": 112,
+        "overtakeBonus": 127,
+        "fastestLap": 20,
+        "dotd": 90
       },
       "sprint": {
         "position": 0,
