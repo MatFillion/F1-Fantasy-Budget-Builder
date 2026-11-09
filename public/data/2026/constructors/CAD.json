@@ -2,7 +2,7 @@
   "abbreviation": "CAD",
   "displayName": "Cadillac",
   "value": "3.0M",
-  "seasonTotalPoints": -102,
+  "seasonTotalPoints": -117,
   "percentagePicked": 9,
   "races": [
     {
@@ -99,6 +99,11 @@
       "round": "19",
       "raceName": "Mexico",
       "totalPoints": 0
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": -15
     }
   ]
 }

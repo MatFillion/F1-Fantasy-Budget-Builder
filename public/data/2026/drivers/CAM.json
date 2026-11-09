@@ -1,0 +1,29 @@
+{
+  "abbreviation": "CAM",
+  "displayName": "Rafael C\u00e2mara",
+  "team": "Haas F1 Team",
+  "position": 23,
+  "value": "6.0M",
+  "seasonTotalPoints": -9,
+  "percentagePicked": 0,
+  "races": [
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": -9,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 0,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    }
+  ]
+}

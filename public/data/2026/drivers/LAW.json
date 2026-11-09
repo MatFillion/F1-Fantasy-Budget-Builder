@@ -2,7 +2,7 @@
   "abbreviation": "LAW",
   "displayName": "Liam Lawson",
   "team": "Red Bull Racing",
-  "position": 16,
+  "position": 17,
   "value": "15.1M",
   "seasonTotalPoints": 53,
   "percentagePicked": 1,
@@ -478,6 +478,42 @@
     {
       "round": "19",
       "raceName": "Mexico",
+      "totalPoints": 0,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 6,
+        "overtakeBonus": 22,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": 11,
+      "race": {
+        "position": 68,
+        "qualifyingPosition": 19,
+        "overtakeBonus": 89,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
       "totalPoints": 0,
       "race": {
         "position": 14,

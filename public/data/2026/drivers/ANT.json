@@ -3,9 +3,9 @@
   "displayName": "Kimi Antonelli",
   "team": "Mercedes",
   "position": 1,
-  "value": "27.4M",
-  "seasonTotalPoints": 744,
-  "percentagePicked": 36,
+  "value": "27.5M",
+  "seasonTotalPoints": 770,
+  "percentagePicked": 37,
   "races": [
     {
       "round": "1",
@@ -340,6 +340,24 @@
         "qualifyingPosition": 151,
         "overtakeBonus": 93,
         "fastestLap": 80,
+        "dotd": 30
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": 26,
+      "race": {
+        "position": 359,
+        "qualifyingPosition": 159,
+        "overtakeBonus": 94,
+        "fastestLap": 90,
         "dotd": 30
       },
       "sprint": {

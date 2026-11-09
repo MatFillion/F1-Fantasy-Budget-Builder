@@ -1,8 +1,8 @@
 {
   "abbreviation": "FER",
   "displayName": "Ferrari",
-  "value": "28.5M",
-  "seasonTotalPoints": 1252,
+  "value": "28.8M",
+  "seasonTotalPoints": 1314,
   "percentagePicked": 41,
   "races": [
     {
@@ -99,6 +99,11 @@
       "round": "19",
       "raceName": "Mexico",
       "totalPoints": 73
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": 62
     }
   ]
 }

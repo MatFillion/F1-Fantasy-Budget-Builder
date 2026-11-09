@@ -3,9 +3,9 @@
   "displayName": "Oliver Bearman",
   "team": "Haas F1 Team",
   "position": 15,
-  "value": "6.2M",
-  "seasonTotalPoints": 66,
-  "percentagePicked": 52,
+  "value": "5.6M",
+  "seasonTotalPoints": 63,
+  "percentagePicked": 51,
   "races": [
     {
       "round": "1",
@@ -339,6 +339,24 @@
         "position": 19,
         "qualifyingPosition": 1,
         "overtakeBonus": 116,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "20",
+      "raceName": "Brazil",
+      "totalPoints": -3,
+      "race": {
+        "position": 19,
+        "qualifyingPosition": 4,
+        "overtakeBonus": 121,
         "fastestLap": 0,
         "dotd": 0
       },
