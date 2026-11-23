@@ -1,8 +1,8 @@
 {
   "abbreviation": "ALP",
   "displayName": "Alpine",
-  "value": "18.2M",
-  "seasonTotalPoints": 399,
+  "value": "17.6M",
+  "seasonTotalPoints": 457,
   "percentagePicked": 7,
   "races": [
     {
@@ -104,6 +104,11 @@
       "round": "20",
       "raceName": "Brazil",
       "totalPoints": 17
+    },
+    {
+      "round": "21",
+      "raceName": "United States",
+      "totalPoints": 58
     }
   ]
 }

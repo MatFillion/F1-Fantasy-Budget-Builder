@@ -2,9 +2,9 @@
   "abbreviation": "SAI",
   "displayName": "Carlos Sainz",
   "team": "Williams",
-  "position": 12,
-  "value": "8.4M",
-  "seasonTotalPoints": 125,
+  "position": 11,
+  "value": "7.8M",
+  "seasonTotalPoints": 152,
   "percentagePicked": 22,
   "races": [
     {
@@ -357,6 +357,24 @@
         "position": 7,
         "qualifyingPosition": 2,
         "overtakeBonus": 127,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "21",
+      "raceName": "United States",
+      "totalPoints": 27,
+      "race": {
+        "position": 11,
+        "qualifyingPosition": 2,
+        "overtakeBonus": 138,
         "fastestLap": 0,
         "dotd": 0
       },

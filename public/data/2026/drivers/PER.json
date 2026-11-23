@@ -2,9 +2,9 @@
   "abbreviation": "PER",
   "displayName": "Sergio Perez",
   "team": "Cadillac",
-  "position": 18,
-  "value": "3.0M",
-  "seasonTotalPoints": 42,
+  "position": 19,
+  "value": "3.6M",
+  "seasonTotalPoints": 25,
   "percentagePicked": 21,
   "races": [
     {
@@ -357,6 +357,24 @@
         "position": 0,
         "qualifyingPosition": 0,
         "overtakeBonus": 104,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
+    },
+    {
+      "round": "21",
+      "raceName": "United States",
+      "totalPoints": -17,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 107,
         "fastestLap": 0,
         "dotd": 0
       },

@@ -42,6 +42,24 @@
         "fastestLap": 0,
         "overtakeBonus": 0
       }
+    },
+    {
+      "round": "21",
+      "raceName": "United States",
+      "totalPoints": 0,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "overtakeBonus": 7,
+        "fastestLap": 0,
+        "dotd": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0
+      }
     }
   ]
 }
